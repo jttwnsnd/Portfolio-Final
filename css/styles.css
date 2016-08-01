@@ -1,0 +1,81 @@
+body{
+	background-color: #dadada;
+	/* font-family: Quicksand; */
+	font-family: Source Code Pro;
+}
+
+.greet{
+	display: block;
+	text-align: center;
+	margin: 15%;
+
+}
+
+.name{
+	transition: all 0.5s ease-in-out;
+}
+
+.text-grow{
+	font-size: 150%;
+}
+
+#title{
+	font-size: 700%;
+	margin-bottom: 5%;
+}
+
+div.sidebar{
+	text-align: right;
+	margin: -60px 15px;
+}
+
+div.sidebar > div{
+	margin: 10px 20px;
+}
+
+span.menu{
+	height: 20px;
+	margin-top: 10px;
+	margin-right: 40px;
+	transition: all .5s ease-in-out;
+}
+
+span.menu >{
+	transition: all .5s ease-in-out;
+}
+
+div.bar{
+	display: inline-block;
+	height: 2px;
+	width: 20px;
+	background-color: black;
+	margin: 0px 0px 4px 0px;
+	transition: all .5s ease-in-out;
+}
+
+#about{
+	padding-right: 22px;
+}
+
+#contact{
+	padding-right: 3px;
+}
+
+.stretching{
+	padding-left: 40px; 
+	transition: all .2s ease-in-out;
+}
+.glow{
+	background-color: #03bcbc !important;
+	transition: all .5s ease-in-out;
+
+}
+
+.glow-text{
+	color:  #03bcbc;
+	transition: all .2s ease-in-out;
+}
+
+.rotate{
+	transform: rotateY(45deg);
+}
