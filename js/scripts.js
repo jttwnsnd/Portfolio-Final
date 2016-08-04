@@ -13,6 +13,21 @@
 // 	2. two halves parallax at different speeds. left half slower than right.
 // 4. parallax contact elements fall into place when scroll comes close to where they fall.
 $(document).ready(function(){
+	var windowScroll;
+	$(window).scroll(function(){
+		windowScroll = $(this).scrollTop();
+		if(windowScroll >= 325){
+			$('.right-side').css('opacity','1');
+		}else if(windowScroll <=324){
+			$('.right-side').css('opacity','0');
+		}
+		if(windowScroll >= 140){
+			$('.leaf').css('opacity', '0');
+		}else if(windowScroll <= 139){
+			$('.leaf').css('opacity', '1');
+		}
+		console.log(windowScroll)
+	})
 	$('.menu').hover(function(){
 		$(this).toggleClass('glow-text');
 		$(this).find('.bar').toggleClass('glow').toggleClass('stretching');
@@ -20,5 +35,23 @@ $(document).ready(function(){
 	$('.curiousity').hover(function(){
 		$('.name').toggleClass('glow-text');
 		$('.name').toggleClass('text-grow');
+	});
+	$('#about-all, #portfolio-all, #contact-all').click(function(){
+		
+	});
+	$('a').on('click',function(event){
+		if(this.hash !== ''){
+			event.preventDefault();
+			var hash = this.hash;
+			console.log(this.hash);
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top}, 800, function(){
+					window.location.hash = hash + 60;
+					console.log(window.location.hash);
+				})
+		}
+	})
+	$('.right-side').css({
+
 	})
 })
