@@ -21,20 +21,25 @@ $(document).ready(function(){
 		}else if(windowScroll <=324){
 			$('.right-side').css('opacity','0');
 		}
-		if(windowScroll >= 140){
+		if(windowScroll >= 200){
 			$('.leaf').css('opacity', '0');
-		}else if(windowScroll <= 139){
+		}else if(windowScroll <= 199){
 			$('.leaf').css('opacity', '1');
 		}
-		console.log(windowScroll)
+		if(windowScroll >= 50){
+			$('.description').css({opacity:1});
+		}
+		if(windowScroll >= 515){
+			$('.bar1').animate({'width':'220px'})
+			$('.bar2').animate({'width': '180px'})
+			$('.bar3').animate({'width': '140px'})
+			$('.bar4').animate({'width': '100px'})
+			$('.bar5').animate({'width': '60px'})
+		}
 	})
 	$('.menu').hover(function(){
 		$(this).toggleClass('glow-text');
 		$(this).find('.bar').toggleClass('glow').toggleClass('stretching');
-	});
-	$('.curiousity').hover(function(){
-		$('.name').toggleClass('glow-text');
-		$('.name').toggleClass('text-grow');
 	});
 	$('#about-all, #portfolio-all, #contact-all').click(function(){
 		
@@ -50,8 +55,5 @@ $(document).ready(function(){
 					console.log(window.location.hash);
 				})
 		}
-	})
-	$('.right-side').css({
-
 	})
 })
