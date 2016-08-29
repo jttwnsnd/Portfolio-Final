@@ -30,11 +30,16 @@ $(document).ready(function(){
 			$('.description').css({opacity:1});
 		}
 		if(windowScroll >= 515){
-			$('.bar1').animate({'width':'220px'})
-			$('.bar2').animate({'width': '180px'})
-			$('.bar3').animate({'width': '140px'})
-			$('.bar4').animate({'width': '100px'})
-			$('.bar5').animate({'width': '60px'})
+			$('.like1').animate({'margin-right':'220px'})
+			$('.like2').animate({'margin-right': '180px'})
+			$('.like3').animate({'margin-right': '140px'})
+			$('.like4').animate({'margin-right': '100px'})
+			$('.like5').animate({'margin-right': '60px'})
+			$('.dislike1').animate({'margin-left':'220px'})
+			$('.dislike2').animate({'margin-left': '180px'})
+			$('.dislike3').animate({'margin-left': '140px'})
+			$('.dislike4').animate({'margin-left': '100px'})
+			$('.dislike5').animate({'margin-left': '60px'})
 		}
 	})
 	$('.menu').hover(function(){

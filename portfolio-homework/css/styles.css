@@ -1,0 +1,32 @@
+body{
+	background: url(http://wallpapercave.com/wp/jYqqRWg.jpg) no-repeat center center fixed;
+	background-size: 100%;
+}
+
+#top-nav {
+	line-height: ;
+	padding: 5px 20px;
+}
+.greeting {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.header-content{
+	height: 900px;
+	width: auto;
+	color: #F05F40;
+}
+
+#w-d-i-do div, #portfolio div{
+	height: 200px;
+	text-align: center;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+.spacer-md{
+	background: url('');
+	height: 400px;
+}
