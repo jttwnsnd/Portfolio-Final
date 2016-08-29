@@ -65,6 +65,12 @@
 
 $(document).ready(function(){
 	$('.menu_option').hover(function(){
-		$(this).children().toggleClass('arrow_hover')
+		$(this).children().toggleClass('menu_arrow_hover')
 	});
+	setTimeout(function(){
+		$('.greet_2').css({
+		'transform':'rotateZ(20deg)',
+		'opacity':'1'
+	})
+	}, 1000)
 })

@@ -1,12 +1,12 @@
 body{
-	background-color: #162A2A;
+	background-color: #555C5C;
 	/* font-family: Quicksand; */
 	font-family: Ubuntu;
-	color:  #5D7070;
+	margin:  0;
+	padding: 0;
 }
-@font-face {
-    font-family: "Stencil Brush";
-    src: url(stencil_brush/Stencil%20Brush.ttf) format("truetype");
+a{
+	text-decoration: none;
 }
 
 #name{
@@ -33,13 +33,14 @@ body{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #001212;
+	background-color: #344141;
 	height:  auto;
 	width:  100%;
-	opacity: 1;
+	z-index: 10;
 }
 
 .menu_option, .brand{
+	color:  #A1AE8C;
 	margin: 0 -2px;
 	padding: 20px 30px;
 	transition: all .7s ease;
@@ -47,8 +48,8 @@ body{
 }
 
 .menu_option:hover{
-	background-color: #5D7070;
-	color: #0A2A2A;
+	background-color: #A1AE8C;
+	color: #5B634F;
 }
 
 .arrow{
@@ -56,14 +57,44 @@ body{
 	position:  absolute;
 	top: 58px;
 	left: 40%;
-	border-top: 10px solid #001212;
+	border-top: 10px solid #344141;
 	border-left: 10px solid transparent;
 	border-right:  10px solid transparent;
 	border-bottom: 10px solid transparent;
 	transform:  translateY(-10px);
 	transition: all .7s ease;
 }
-.arrow_hover{
-	border-top: 10px solid #5D7070;
+.menu_arrow_hover{
+	border-top: 10px solid #A1AE8C;
 	transform:  translateY(0px);
+}
+
+.main_greet{
+	color:  #A1AE8C;
+	font-family: Bungee Shade;
+	margin: 60px 0px;
+	padding: 0;
+	/* background-image: url('../placeholder.jpeg');
+	background-size:  100% auto;
+	background-repeat: no-repeat; */
+	height: 600px;
+	width: 100%;
+}
+
+.greet_1{
+	font-size: 40px;
+	position: relative;
+	top: 30%;
+	left: 25%;
+}
+
+.greet_2{
+	font-family:  Ubuntu;
+	font-size: 16px;
+	position: absolute;
+	-ms-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	transform: rotateZ(-5deg);
+	opacity: 0;
+	transition: all 1s cubic-bezier(.47,2.15,.52,.39);
 }
