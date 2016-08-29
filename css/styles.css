@@ -1,7 +1,8 @@
 body{
-	background-color: #dadada;
+	background-color: #162A2A;
 	/* font-family: Quicksand; */
 	font-family: Ubuntu;
+	color:  #5D7070;
 }
 @font-face {
     font-family: "Stencil Brush";
@@ -9,10 +10,7 @@ body{
 }
 
 #name{
-	-webkit-margin-before: 1em;
-	-webkit-margin-after: 1em;
-	-webkit-margin-start: 0px;
-	-webkit-padding-start:  20px;
+
 	float: left;
 }
 
@@ -20,8 +18,52 @@ body{
 	float: right;
 }
 
+#menu ul{
+	margin:  0;
+}
+
 #menu ul > li{
-	margin-right: 20px;
+	margin: 0;
+	padding: 0;
 	display: inline-block;
 	list-style: none;
+}
+
+.nav_bar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #001212;
+	height:  auto;
+	width:  100%;
+	opacity: 1;
+}
+
+.menu_option, .brand{
+	margin: 0 -2px;
+	padding: 20px 30px;
+	transition: all .7s ease;
+	position:  relative;
+}
+
+.menu_option:hover{
+	background-color: #5D7070;
+	color: #0A2A2A;
+}
+
+.arrow{
+	background-color: transparent;
+	position:  absolute;
+	top: 58px;
+	left: 40%;
+	border-top: 10px solid #001212;
+	border-left: 10px solid transparent;
+	border-right:  10px solid transparent;
+	border-bottom: 10px solid transparent;
+	transform:  translateY(-10px);
+	transition: all .7s ease;
+}
+.arrow_hover{
+	border-top: 10px solid #5D7070;
+	transform:  translateY(0px);
 }
