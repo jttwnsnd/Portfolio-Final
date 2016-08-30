@@ -49,28 +49,23 @@
 // 	$('#about-all, #portfolio-all, #contact-all').click(function(){
 		
 // 	});
-// 	$('a').on('click',function(event){
-// 		if(this.hash !== ''){
-// 			event.preventDefault();
-// 			var hash = this.hash;
-// 			console.log(this.hash);
-// 			$('html, body').animate({
-// 				scrollTop: $(hash).offset().top}, 800, function(){
-// 					window.location.hash = hash + 60;
-// 					console.log(window.location.hash);
-// 				})
-// 		}
-// 	})
+	
 // })
 
 $(document).ready(function(){
 	$('.menu_option').hover(function(){
 		$(this).children().toggleClass('menu_arrow_hover')
 	});
-	setTimeout(function(){
-		$('.greet_2').css({
-		'transform':'rotateZ(20deg)',
-		'opacity':'1'
+	$('a').on('click',function(event){
+		if(this.hash !== ''){
+			event.preventDefault();
+			var hash = this.hash;
+			console.log(this.hash);
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top}, 800, function(){
+					window.location.hash = hash + 60;
+					console.log(window.location.hash);
+				})
+		}
 	})
-	}, 1000)
 })

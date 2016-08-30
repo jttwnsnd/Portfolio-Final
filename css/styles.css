@@ -39,13 +39,73 @@ a{
 	z-index: 10;
 }
 
-.menu_option, .brand{
+.menu_option{
 	color:  #A1AE8C;
 	margin: 0 -2px;
 	padding: 20px 30px;
 	transition: all .7s ease;
 	position:  relative;
 }
+
+.brand{
+	position: absolute;
+	top: 0;
+	left: 20px;
+}
+
+#ribbon-body{
+	position: relative;
+	top: -93px;
+	left: 100px;
+	height: 50%;
+	font-size: 1.5em;
+	font-weight:  bold;
+	padding: 100px 20px 1px 20px;
+	margin:  30px 10px 10px -70px;
+	color: #A1AE8C;
+	background-color: #898D83;
+	text-shadow: 0px 1px 2px #57565F;
+	/* -webkit-box-shadow:  0px 2px 4px #888;
+	-moz-box-shadow:  0px 2px 4px #888;
+	box-shadow:  0px 2px 4px #888; */
+	border: 1px solid #797E70;
+	/* border-bottom: 1px solid #57565F; */
+}
+
+#ribbon-body:after{
+	content:  ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 101%;
+	top: 93%;
+	border-width: 5px 8px;
+	border-style:  solid;
+	border-color: #57565F transparent transparent #57565F;
+}
+
+#ribbon-body > span{
+	position: relative;
+	top:  -1em;
+}
+
+#ribbon-body:before{
+	content: ' ';
+	z-index: -1;
+	position: absolute;
+	width: 0px;
+	height: 10px;
+	left: 15px;
+	top: 93%;
+	border-width: 15px 92px;
+	border-style:  solid;
+	border-color: #898D83 #898D83 transparent #898D83;
+
+}
+/* #ribbon-body span{
+	position: relative;
+	top: -20px;
+} */
 
 .menu_option:hover{
 	background-color: #A1AE8C;
@@ -94,7 +154,11 @@ a{
 	position: absolute;
 	-ms-transform-origin: 0 0;
 	-webkit-transform-origin: 0 0;
-	transform: rotateZ(-5deg);
-	opacity: 0;
-	transition: all 1s cubic-bezier(.47,2.15,.52,.39);
+	transform: rotateZ(20deg);
+}
+
+#portfolio{
+	height: 100px;
+	width: 100%;
+	background-color: #64646B;
 }
