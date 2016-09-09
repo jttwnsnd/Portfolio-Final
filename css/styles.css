@@ -1,5 +1,25 @@
+/* reusable classes */
+.section{
+	margin-top:  60px;
+}
+.section-title{
+	font-family: Bungee Shade;
+	color:  #9DC462;
+	font-size:  30px;
+	text-align: center;
+}
+
+.circle{
+	border-radius:  50%;
+	width: 175px;
+	height:  175px;
+	background-color: pink;
+	display: inline-block;
+}
+
+
 body{
-	background-color: #555C5C;
+	background-color: #226666;
 	/* font-family: Quicksand; */
 	font-family: Ubuntu;
 	margin:  0;
@@ -7,6 +27,13 @@ body{
 }
 a{
 	text-decoration: none;
+}
+
+img{
+	height: 50px;
+	width: auto;
+	/* filter: grayscale(70%);
+	-webkit-filter: grayscale(70%); */
 }
 
 #name{
@@ -33,14 +60,14 @@ a{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #344141;
+	background-color: #003333;
 	height:  auto;
 	width:  100%;
 	z-index: 10;
 }
 
 .menu_option{
-	color:  #A1AE8C;
+	color:  #9DC462;
 	margin: 0 -2px;
 	padding: 20px 30px;
 	transition: all .7s ease;
@@ -62,13 +89,13 @@ a{
 	font-weight:  bold;
 	padding: 100px 20px 1px 20px;
 	margin:  30px 10px 10px -70px;
-	color: #A1AE8C;
-	background-color: #898D83;
+	color: #9DC462;
+	background-color: #739D34;
 	text-shadow: 0px 1px 2px #57565F;
 	/* -webkit-box-shadow:  0px 2px 4px #888;
 	-moz-box-shadow:  0px 2px 4px #888;
 	box-shadow:  0px 2px 4px #888; */
-	border: 1px solid #797E70;
+	border: 1px solid #4F7514;
 	/* border-bottom: 1px solid #57565F; */
 }
 
@@ -81,7 +108,7 @@ a{
 	top: 93%;
 	border-width: 5px 8px;
 	border-style:  solid;
-	border-color: #57565F transparent transparent #57565F;
+	border-color: #4F7514 transparent transparent #4F7514;
 }
 
 #ribbon-body > span{
@@ -99,7 +126,7 @@ a{
 	top: 93%;
 	border-width: 15px 92px;
 	border-style:  solid;
-	border-color: #898D83 #898D83 transparent #898D83;
+	border-color: #739D34 #739D34 transparent #739D34;
 
 }
 /* #ribbon-body span{
@@ -108,7 +135,7 @@ a{
 } */
 
 .menu_option:hover{
-	background-color: #A1AE8C;
+	background-color: #9DC462;
 	color: #5B634F;
 }
 
@@ -117,7 +144,7 @@ a{
 	position:  absolute;
 	top: 58px;
 	left: 40%;
-	border-top: 10px solid #344141;
+	border-top: 10px solid #003333;
 	border-left: 10px solid transparent;
 	border-right:  10px solid transparent;
 	border-bottom: 10px solid transparent;
@@ -125,12 +152,12 @@ a{
 	transition: all .7s ease;
 }
 .menu_arrow_hover{
-	border-top: 10px solid #A1AE8C;
+	border-top: 10px solid #9DC462;
 	transform:  translateY(0px);
 }
 
 .main_greet{
-	color:  #A1AE8C;
+	color:  #9DC462;
 	font-family: Bungee Shade;
 	margin: 60px 0px;
 	padding: 0;
@@ -158,7 +185,32 @@ a{
 }
 
 #portfolio{
-	height: 100px;
+	padding: 60px 0px;
+	height: auto;
 	width: 100%;
-	background-color: #64646B;
+	background-color: #3C3176;
+}
+
+.selection{
+	font-family: Ubuntu;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+}
+
+.selection > ul{
+	padding:  0;
+	margin: 0;
+	margin-top: 30px;
+}
+
+.selection li {
+	margin: 2px;
+	padding: 15px 25px;
+	display: inline-block;
+	list-style: none;
+}
+
+.left-two, .left-one, .right-two, .right-one{
+	margin: 2%;
 }
