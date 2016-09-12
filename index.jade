@@ -1,0 +1,57 @@
+html
+  head
+    title
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bungee+Shade" )
+    link(rel="stylesheet", href="css/styles.css")
+  body
+    .nav-bar
+      div
+        .brand#name
+          #ribbon
+            #ribbon-body
+              span JT Townsend
+      #menu
+        ul
+          li
+            a(href="#home")
+              .menu_option Home
+                .arrow
+          li
+            a(href="#portfolio")
+              .menu_option Portfolio
+                .arrow
+          li
+            a(href="#about")
+              .menu_option About
+                .arrow
+          li
+            a(href="#contact")
+              .menu_option Contact
+                .arrow
+    #home
+    .main_greet
+      .greet_1
+        span Hello, I'm JT
+        .greet_2 A Web Developer and Interactive Artist
+    #portfolio
+      .section-title
+        span Portfolio
+        .selection
+          .circle.left-two
+          .circle.left-one
+          .circle.right-one
+          .circle.right-two
+    #about
+      .section-title
+        span About
+        .selection
+          div here is some info about me
+    #contact
+      .section-title
+        span Contact
+        .selection
+          div here is my contact info
+
+    script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+    script(type="text/javascript", src="js/scripts.js")
