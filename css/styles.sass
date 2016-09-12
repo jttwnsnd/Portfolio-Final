@@ -30,6 +30,20 @@
   margin: 2%
 a
   text-decoration: none
+.arrow
+  background-color: transparent
+  position: absolute
+  top: 58px
+  left: 40%
+  border-top: 10px solid #003333
+  border-left: 10px solid transparent
+  border-right:  10px solid transparent
+  border-bottom: 10px solid transparent
+  transform:  translateY(-10px)
+  transition: all .7s ease
+.menu_arrow_hover
+  border-top: 10px solid #9DC462
+  transform:  translateY(0px)
 
 body
   background-color: #226666
@@ -102,23 +116,9 @@ body
             padding: 20px 30px
             transition: all .7s ease
             position:  relative
-          &:hover
-            background-color: #9DC462
-            color: #5B634F
-            .arrow
-              background-color: transparent
-              position: absolute
-              top: 58px
-              left: 40%
-              border-top: 10px solid #003333
-              border-left: 10px solid transparent
-              border-right:  10px solid transparent
-              border-bottom: 10px solid transparent
-              transform:  translateY(-10px)
-              transition: all .7s ease
-            .menu_arrow_hover
-              border-top: 10px solid #9DC462
-              transform:  translateY(0px)
+            &:hover
+              background-color: #9DC462
+              color: #5B634F
   .main_greet
     color:  #9DC462
     font-family: Bungee Shade
