@@ -106,10 +106,10 @@ body {
             padding: 20px 30px;
             transition: all 0.7s ease;
             position: relative; }
-          body .nav-bar #menu ul li .menu_option:hover {
+          body .nav-bar #menu ul li:hover {
             background-color: #9DC462;
             color: #5B634F; }
-            body .nav-bar #menu ul li .menu_option:hover .arrow {
+            body .nav-bar #menu ul li:hover .arrow {
               background-color: transparent;
               position: absolute;
               top: 58px;
@@ -120,11 +120,8 @@ body {
               border-bottom: 10px solid transparent;
               transform: translateY(-10px);
               transition: all 0.7s ease; }
-            body .nav-bar #menu ul li .menu_option:hover .menu_arrow_hover {
+            body .nav-bar #menu ul li:hover .menu_arrow_hover {
               border-top: 10px solid #9DC462;
-              border-left: 10px solid transparent;
-              border-right: 10px solid transparent;
-              border-bottom: 10px solid transparent;
               transform: translateY(0px); }
   body .main_greet {
     color: #9DC462;
