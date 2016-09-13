@@ -47,14 +47,14 @@
 // 		$(this).find('.bar').toggleClass('glow').toggleClass('stretching');
 // 	});
 // 	$('#about-all, #portfolio-all, #contact-all').click(function(){
-		
+
 // 	});
-	
+
 // })
 
 $(document).ready(function(){
 	$('.menu_option').hover(function(){
-		$(this).children().toggleClass('menu_arrow_hover')
+		$(this).children().toggleClass('arrow_drop')
 	});
 	$('a').on('click',function(event){
 		if(this.hash !== ''){

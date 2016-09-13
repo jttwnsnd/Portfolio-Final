@@ -1,145 +1,48 @@
+//importing all my stylesheets
+@import 'menu'
+@import 'greet'
+
 // reusable classes
 .section
-  margin-top:  60px
+  margin-top:  3.750em
 .section-title
   font-family: Bungee Shade
   color:  #9DC462
-  font-size:  30px
+  font-size:  1.875em
   text-align: center
 .circle
   border-radius:  50%
-  width: 175px
-  height:  175px
+  width: 10.938em
+  height:  10.938em
   background-color: pink
   display: inline-block
 .selection
   font-family: Ubuntu
-  font-size: 16px
+  font-size: 1em
   text-align: center
   position: relative
   ul
     padding: 0
     margin: 0
-    margin-top: 30px
+    margin-top: 1.875em
   li
-    margin: 2px
-    padding: 15px 25px
+    margin: 0.125em
+    padding: 0.938em 1.563em
     display: inline-block
     list-style: none
 .left-two, .left-one, .right-two, .right-one
   margin: 2%
 a
   text-decoration: none
-.arrow
-  background-color: transparent
-  position: absolute
-  top: 58px
-  left: 40%
-  border-top: 10px solid #003333
-  border-left: 10px solid transparent
-  border-right:  10px solid transparent
-  border-bottom: 10px solid transparent
-  transform:  translateY(-10px)
-  transition: all .7s ease
-.menu_arrow_hover
-  border-top: 10px solid #9DC462
-  transform:  translateY(0px)
+//do not nest this into the menu, gives "phantom coloring"
 
 body
   background-color: #226666
   font-family: Ubuntu
   margin:  0
   padding: 0
-  .nav-bar
-    position: fixed
-    top: 0
-    left: 0
-    background-color: #003333
-    height: auto
-    width: 100%
-    z-index: 10
-    .brand
-      position: absolute
-      top: 0
-      left: 20px
-    #name
-      float: left
-    #ribbon-body
-      position: relative
-      top: -93px
-      left: 100px
-      height: 50%
-      font-size: 1.5em
-      font-weight: bold
-      padding: 100px 20px 1px 20px
-      margin: 30px 10px 10px -70px
-      color: #9DC462
-      background-color: #739D34
-      text-shadow: 0px 1px 2px #57565F
-      border: 1px solid #4F7514
-      span
-        position: relative
-        top:  -1em
-      &:after
-        content:  ' '
-        position: absolute
-        width: 0
-        height: 0
-        left: 101%
-        top: 93%
-        border-width: 5px 8px
-        border-style:  solid
-        border-color: #4F7514 transparent transparent #4F7514
-      &:before
-        content: ' '
-        z-index: -1
-        position: absolute
-        width: 0px
-        height: 10px
-        left: 15px
-        top: 93%
-        border-width: 15px 92px
-        border-style:  solid
-        border-color: #739D34 #739D34 transparent #739D34
-    #menu
-      float: right
-      ul
-        margin:  0
-        li
-          margin: 0
-          padding: 0
-          display: inline-block
-          list-style: none
-          .menu_option
-            color:  #9DC462
-            margin: 0 -2px
-            padding: 20px 30px
-            transition: all .7s ease
-            position:  relative
-            &:hover
-              background-color: #9DC462
-              color: #5B634F
-  .main_greet
-    color:  #9DC462
-    font-family: Bungee Shade
-    margin: 60px 0px
-    padding: 0
-    height: 600px
-    width: 100%
-    .greet_1
-      font-size: 40px
-      position: relative
-      top: 30%
-      left: 25%
-      .greet_2
-        font-family: Ubuntu
-        font-size: 16px
-        position: absolute
-        -ms-transform-origin: 0 0
-        -webkit-transform-origin: 0 0
-        transform: rotateZ(20deg)
   #portfolio
-    padding: 60px 0px
+    padding: 3.750em 0em
     height: auto
     width: 100%
     background-color: #3C3176

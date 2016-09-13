@@ -1,0 +1,87 @@
+//arrow and arrow animation for my menu
+.arrow
+  background-color: transparent
+  position: absolute
+  top: 3.625em
+  left: 40%
+  border-top: 0.625em solid #003333
+  border-left: 0.625em solid transparent
+  border-right:  0.625em solid transparent
+  border-bottom: 0.625em solid transparent
+  transform:  translateY(-0.625em)
+  transition: all .7s ease
+.arrow_drop
+  border-top: 0.625em solid #9DC462
+  transform:  translateY(0em)
+
+//here is my nav styling
+
+.nav-bar
+  position: fixed
+  top: 0
+  left: 0
+  background-color: #003333
+  height: auto
+  width: 100%
+  z-index: 10
+  .brand
+    position: absolute
+    top: 0
+    left: 1.250em
+  #name
+    float: left
+  #ribbon-body
+    position: relative
+    top: -6.43em
+    left: 6.250em
+    height: 50%
+    font-size: 1.5em
+    font-weight: bold
+    padding: 6.250em 1.250em 0.063em 1.250em
+    margin: 1.875em 0.625em 0.625em -4.375em
+    color: #9DC462
+    background-color: #739D34
+    text-shadow: 0em 0.063em 0.125em #57565F
+    border: 0.063em solid #4F7514
+    span
+      position: relative
+      top:  -1em
+    &:after
+      content:  ' '
+      position: absolute
+      width: 0
+      height: 0
+      left: 100%
+      top: 92.5%
+      border-width: 0.313em 0.500em
+      border-style:  solid
+      border-color: #4F7514 transparent transparent #4F7514
+    &:before
+      content: ' '
+      z-index: -1
+      position: absolute
+      width: 0em
+      height: 0.625em
+      left: 0.938em
+      top: 93%
+      border-width: 0.938em 4.245em
+      border-style:  solid
+      border-color: #739D34 #739D34 transparent #739D34
+  #menu
+    float: right
+    ul
+      margin:  0
+      li
+        margin: 0
+        padding: 0
+        display: inline-block
+        list-style: none
+        .menu_option
+          color:  #9DC462
+          margin: 0 -0.125em
+          padding: 1.250em 1.875em
+          transition: all .7s ease
+          position:  relative
+          &:hover
+            background-color: #9DC462
+            color: #5B634F
