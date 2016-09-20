@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body id="home">
     <div class="nav-bar">
       <div>
         <div id="name" class="brand">
@@ -38,26 +38,86 @@
         </ul>
       </div>
     </div>
-    <div id="home"></div>
     <div class="main_greet">
       <div class="greet_1"><span>Hello, I'm JT</span>
         <div class="greet_2">A Web Developer and Interactive Artist</div>
-      </div>
+      </div><a href="#portfolio">
+        <div id="greet_arrow" class="next-section-arrow">
+          <div class="background-arrow"></div>
+        </div></a>
     </div>
     <div id="portfolio">
       <div class="section-title"><span>Portfolio</span>
         <div class="selection">
-          <div class="circle left-two"></div>
-          <div class="circle left-one"></div>
-          <div class="circle right-one"></div>
-          <div class="circle right-two"></div>
+          <div id="project1" class="project">
+            <div class="preview">
+              <div class="project-overview"> 
+                <div class="project-name">DC Roasters</div>
+                <div class="languages"></div>
+              </div>
+            </div>
+            <div class="details"></div>
+          </div>
+          <div id="project2" class="project">
+            <div class="preview">
+              <div class="project-overview">
+                <div class="project-name">Zombiez</div>
+                <div class="languages">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>Leaflet.js</li>
+                    <li>Mapbox.js</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="details"></div>
+          </div>
+          <div id="project3" class="project">
+            <div class="preview"></div>
+            <div class="project-overview">
+              <div class="project-name">Zombiez</div>
+              <div class="languages"></div>
+            </div>
+            <div class="details"></div>
+          </div>
+          <div id="project4" class="project">
+            <div class="preview"></div>
+            <div class="project-overview">
+              <div class="project-name">Zombiez</div>
+              <div class="languages"></div>
+            </div>
+            <div class="details"></div>
+          </div>
         </div>
-      </div>
+      </div><a href="#about">
+        <div id="arrow-portfolio" class="next-section-arrow">
+          <div class="background-arrow"></div>
+        </div></a>
     </div>
     <div id="about">
       <div class="section-title"><span>About</span>
         <div class="selection">
-          <div>here is some info about me</div>
+          <div class="about_me">Being honest... I am a
+            <ul>
+              <li class="icon"> <img src="images/processor.png" id="tech">
+                <div class="text">Video Game and Tech Lover</div>
+              </li>
+              <li class="icon"> <img src="images/book.png" id="learn">
+                <div class="text">Constant & Hungry Learner</div>
+              </li>
+              <li class="icon"> <img src="images/helmet.png" id="hema">
+                <div class="text">Historical European Martial Arts Practicioner</div>
+              </li>
+              <li class="icon"><img src="images/sunglasses.png" id="geek">
+                <div class="text">Just A Bit Geeky All Around</div>
+              </li>
+            </ul>
+          </div>
+          <div>I am always doing something weird and fun. Be it playing a fantasy game, swinging swords with my buddies, DIY projects, or backpacking</div>
         </div>
       </div>
     </div>
@@ -65,6 +125,11 @@
       <div class="section-title"><span>Contact</span>
         <div class="selection">
           <div>here is my contact info</div>
+          <form action-"mail.php method="mail()">
+            <input type="text" name="fullName">
+            <input type="email" name="email">
+            <textarea name="body"></textarea>
+          </form>
         </div>
       </div>
     </div>

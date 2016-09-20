@@ -7,7 +7,7 @@ html
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bungee+Shade" )
     link(rel="stylesheet", href="css/styles.css")
-  body
+  body#home
     .nav-bar
       div
         .brand#name
@@ -32,29 +32,81 @@ html
             a(href="#contact")
               .menu_option Contact
                 .arrow
-    #home
     .main_greet
       .greet_1
         span Hello, I'm JT
         .greet_2 A Web Developer and Interactive Artist
+      a(href="#portfolio")
+        .next-section-arrow#greet_arrow
+          .background-arrow
     #portfolio
       .section-title
         span Portfolio
         .selection
-          .circle.left-two
-          .circle.left-one
-          .circle.right-one
-          .circle.right-two
+          .project#project1
+            .preview
+              .project-overview 
+                .project-name DC Roasters
+                .languages
+            .details
+          .project#project2
+            .preview
+              .project-overview
+                .project-name Zombiez
+                .languages
+                  ul
+                    li HTML
+                    li CSS
+                    li Javascript
+                    li jQuery
+                    li Leaflet.js
+                    li Mapbox.js
+            .details
+          .project#project3
+            .preview
+            .project-overview
+              .project-name Zombiez
+              .languages
+            .details
+          .project#project4
+            .preview
+            .project-overview
+              .project-name Zombiez
+              .languages
+            .details
+      a(href="#about")
+        .next-section-arrow#arrow-portfolio
+          div.background-arrow
     #about
       .section-title
         span About
         .selection
-          div here is some info about me
+          div.about_me Being honest... I am a
+            ul
+              li.icon 
+                img(src="images/processor.png")#tech
+                .text Video Game and Tech Lover
+              li.icon 
+                img(src="images/book.png")#learn
+                .text Constant & Hungry Learner
+              li.icon 
+                img(src="images/helmet.png")#hema
+                .text Historical European Martial Arts Practicioner
+              li.icon
+                img(src="images/sunglasses.png")#geek
+                .text Just A Bit Geeky All Around
+          div I am always doing something weird and fun. Be it playing a fantasy game, swinging swords with my buddies, DIY projects, or backpacking
+          
     #contact
       .section-title
         span Contact
         .selection
           div here is my contact info
+          //- this is my email form
+          form(action-"mail.php", method="mail()")
+            input(type="text", name="fullName")
+            input(type="email", name="email")
+            textarea(name="body")
 
     script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
     script(type="text/javascript", src="js/scripts.js")
