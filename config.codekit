@@ -212,6 +212,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/dc_roast_screenshot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.43955e+06,
+		"inputAbbreviatedPath": "\/images\/dc_roast_screenshot.png",
+		"outputAbbreviatedPath": "\/images\/dc_roast_screenshot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/dev-logos\/AngularJS.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -487,14 +498,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
+	"\/images\/zombiez_screenshot.png": {
+		"fileType": 32768,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 2.00757e+06,
+		"inputAbbreviatedPath": "\/images\/zombiez_screenshot.png",
+		"outputAbbreviatedPath": "\/images\/zombiez_screenshot.png",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,

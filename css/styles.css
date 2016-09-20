@@ -127,6 +127,7 @@
   margin: 60px 30px;
   transition: all 0.7s ease-in-out; }
   .preview .project-overview {
+    color: #739D34;
     text-align: center;
     position: absolute;
     height: 100%;
@@ -137,6 +138,20 @@
     .preview .project-overview .project-name {
       font-size: 25px;
       margin: 15% auto 5%; }
+    .preview .project-overview .project-links {
+      padding: 10px 30px;
+      text-decoration: none;
+      transition: all 0.7s ease; }
+      .preview .project-overview .project-links:link {
+        color: #739D34; }
+      .preview .project-overview .project-links:visited {
+        color: #739D34; }
+      .preview .project-overview .project-links:hover {
+        color: #9DC462; }
+    .preview .project-overview hr {
+      border: 1px solid #003333;
+      height: 1px;
+      background: linear-gradient(to right, #003333, #fff, #003333); }
 
 .details {
   display: inline-block;
@@ -146,20 +161,36 @@
   background-color: rgba(255, 192, 203, 0.2); }
 
 #project1 .preview {
-  background-image: url("../images/blackjack_screenshot.png");
+  background-image: url("../images/dc_roast_screenshot.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 110% auto; }
+  background-size: auto 110%; }
   #project1 .preview:hover {
-    background-size: 100% auto; }
+    background-size: auto 100%; }
 
 #project2 .preview {
-  background-image: url("../images/political_screenshot.png");
+  background-image: url("../images/zombiez_screenshot.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto 110%; }
   #project2 .preview:hover {
     background-size: auto 100%; }
+
+#project3 .preview {
+  background-image: url("../images/political_screenshot.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 110%; }
+  #project3 .preview:hover {
+    background-size: auto 100%; }
+
+#project4 .preview {
+  background-image: url("../images/blackjack_screenshot.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 110% auto; }
+  #project4 .preview:hover {
+    background-size: 100% auto; }
 
 @keyframes moving_arrows_body {
   0% {
@@ -221,6 +252,9 @@
     padding: 15px 25px;
     display: inline-block;
     list-style: none; }
+
+a {
+  cursor: default; }
 
 .left-two, .left-one, .right-two, .right-one {
   margin: 2%; }
