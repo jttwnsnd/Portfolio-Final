@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>JT Townsend</title>
+    <script src="https://use.fontawesome.com/60d310a586.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade">
     <link rel="stylesheet" href="css/styles.css">
@@ -20,19 +21,19 @@
       <div id="menu">
         <ul>
           <li><a href="#home">
-              <div class="menu_option">Home
+              <div id="menu_home" class="menu_option">Home
                 <div class="arrow"></div>
               </div></a></li>
           <li><a href="#portfolio">
-              <div class="menu_option">Portfolio
+              <div id="menu_portfolio" class="menu_option">Portfolio
                 <div class="arrow"></div>
               </div></a></li>
           <li><a href="#about">
-              <div class="menu_option">About
+              <div id="menu_about" class="menu_option">About
                 <div class="arrow"></div>
               </div></a></li>
           <li><a href="#contact">
-              <div class="menu_option">Contact
+              <div id="menu_contact" class="menu_option">Contact
                 <div class="arrow"></div>
               </div></a></li>
         </ul>
@@ -52,7 +53,7 @@
           <div id="project1" class="project">
             <div class="preview">
               <div class="project-overview"> 
-                <div class="project-name">DC Roasters</div><a href="www.jt-townsend.com/coffeeSite" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/NodeEcommerce" class="project-links">Github Repository</a>
+                <div class="project-name">DC Roasters</div><a href="http://www.jt-townsend.com/coffeeSite" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/NodeEcommerce" class="project-links">Github Repository</a>
                 <hr>
                 <div class="languages">
                   <ul>
@@ -69,14 +70,26 @@
               </div>
             </div>
             <div class="details">
-              <div class="code-snippet"></div>
-              <div class="challenges"></div>
+              <div class="code-snippet-wrapper">
+                <div class="code-snippet"></div>
+              </div>
+              <div class="challenges-wrapper">
+                <div class="challenges">
+                  <h3>DC Roasters</h3>
+                  <div class="text">
+                     
+                    Getting and transferring all the information I need to display across my 
+                    views is a big challenge in this project. My solution is to set the entire 
+                    data to an Angular object <code>$scope.userInfo</code> inside of my <code>function checkFunction()</code> that is invoked every time the view is changed.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div id="project2" class="project">
             <div class="preview">
               <div class="project-overview">
-                <div class="project-name">Zombiez</div><a href="www.jt-townsend.com/zombiez" class="project-links">Live Demo</a><a href="https://github.com/paigen11/frontend-project" class="project-links">Github Repository</a>
+                <div class="project-name">Zombiez</div><a href="http://www.jt-townsend.com/zombiez" class="project-links">Live Demo</a><a href="https://github.com/paigen11/frontend-project" class="project-links">Github Repository</a>
                 <hr>
                 <div class="languages">
                   <ul>
@@ -91,14 +104,25 @@
               </div>
             </div>
             <div class="details">
-              <div class="code-snippet"></div>
-              <div class="challenges"></div>
+              <div class="code-snippet-wrapper">
+                <div class="code-snippet"></div>
+              </div>
+              <div class="challenges-wrapper">
+                <div class="challenges">
+                  <h3>Zombiez</h3>
+                  <div class="text">
+                     
+                    One challenge that I faced was a menu option failing with jQuery’s abilities to 
+                    add CSS classes through <code>toggleClass()</code> and <code>addClass()</code>. After testing each option meticulously, I noticed the issue hiding in the<code>setTimeout()</code> for the option and gave consistency to the menu option by using<code>addClass()</code> , preventing the inconsistency for the option.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div id="project3" class="project">
             <div class="preview">
               <div class="project-overview">
-                <div class="project-name">Political Tweets</div><a href="www.jt-townsend.com/angularTweets" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/agnular-tweets" class="project-links">Github Repository</a>
+                <div class="project-name">Political Tweets</div><a href="http://www.jt-townsend.com/angularTweets" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/agnular-tweets" class="project-links">Github Repository</a>
                 <hr>
                 <div class="languages">
                   <ul>
@@ -113,14 +137,26 @@
               </div>
             </div>
             <div class="details">
-              <div class="code-snippet"></div>
-              <div class="challenges"></div>
+              <div class="code-snippet-wrapper">
+                <div class="code-snippet"></div>
+              </div>
+              <div class="challenges-wrapper">
+                <div class="challenges">
+                  <h3>Political Tweets</h3>
+                  <div class="text">
+                     
+                    I incorporate a recent search list history. During implementation I experienced 
+                    an issue with keeping the list up to date. I resolved the issue by using an array 
+                    to store the search queries. The array held up to 5 entries and I used Javascript array methods <code>array.unshift()</code> to place new information at the top and <code>array.splice()</code> to keep the list at 5 entries.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div id="project4" class="project">
             <div class="preview">
               <div class="project-overview">
-                <div class="project-name">Blackjack</div><a href="www.jt-townsend.com/blackjack" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/blackjack" class="project-links">Github Repository</a>
+                <div class="project-name">Blackjack</div><a href="http://www.jt-townsend.com/blackjack" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/blackjack" class="project-links">Github Repository</a>
                 <hr>
                 <div class="languages">
                   <ul>
@@ -133,8 +169,21 @@
               </div>
             </div>
             <div class="details">
-              <div class="code-snippet"></div>
-              <div class="challenges"></div>
+              <div class="code-snippet-wrapper">
+                <div class="code-snippet"></div>
+              </div>
+              <div class="challenges-wrapper">
+                <div class="challenges">
+                  <h3>Blackjack</h3>
+                  <div class="text">
+                     
+                    Keeping track of card values is easy until you get to anything Jacks and above. Aces were 
+                    exceptionally tricky. To help keep track, giving conditionals to control the value 
+                    is what I found to keep the values in check. With Aces being the special case, I used <code>if((cardValue == 11) && (total > 21))</code> as my conditional to check whether Ace needs to be 1 or 11, creating a dynamic and realistic 
+                    feel to the game.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -146,34 +195,53 @@
     <div id="about">
       <div class="section-title"><span>About</span>
         <div class="selection">
-          <div class="about_me">Being honest... I am a
-            <ul>
-              <li class="icon"> <img src="images/processor.png" id="tech">
-                <div class="text">Video Game and Tech Lover</div>
-              </li>
-              <li class="icon"> <img src="images/book.png" id="learn">
-                <div class="text">Constant & Hungry Learner</div>
-              </li>
-              <li class="icon"> <img src="images/helmet.png" id="hema">
-                <div class="text">Historical European Martial Arts Practicioner</div>
-              </li>
-              <li class="icon"><img src="images/sunglasses.png" id="geek">
-                <div class="text">Just A Bit Geeky All Around</div>
-              </li>
-            </ul>
+          <div class="about_me"> 
+            <div class="title">Being honest... I am a</div>
+            <div class="icon"> <img src="images/processor.png" id="tech">
+              <div class="text">Video Game and Tech Lover</div>
+            </div>
+            <div class="icon"> <img src="images/book.png" id="learn">
+              <div class="text">Constant & Hungry Learner</div>
+            </div>
+            <div class="icon hema"> <img src="images/helmet.png" id="hema">
+              <div class="text">Historical European Martial Arts Practicioner</div>
+            </div>
+            <div class="icon"><img src="images/sunglasses.png" id="geek">
+              <div class="text"> Bit Geeky All Around</div>
+            </div>
           </div>
-          <div>I am always doing something weird and fun. Be it playing a fantasy game, swinging swords with my buddies, DIY projects, or backpacking</div>
+          <div class="highlight_me">I am always doing something different and fun. Be it playing a table-top games, swinging swords with my buddies, DIY projects, or backpacking</div>
         </div>
       </div>
     </div>
     <div id="contact">
       <div class="section-title"><span>Contact</span>
         <div class="selection">
-          <div>here is my contact info</div>
+          <div>Have a question? Want to get in touch?</div>
+          <ul>
+            <li><a href="http://www.twitter.com/jttwnsnd"><i class="fa fa-twitter fa-3"></i></a></li>
+            <li><a href="http://www.github.com/jttwnsnd"> <i class="fa fa-github fa-3"></i></a></li>
+            <li><a href="jt.a.townsend@gmail.com"><i class="fa fa-google fa-3"></i></a></li>
+          </ul>
+          <div>Send me a message:</div>
           <form action-"mail.php method="mail()">
-            <input type="text" name="fullName">
-            <input type="email" name="email">
-            <textarea name="body"></textarea>
+            <div class="grouping">
+              <div class="input-group">
+                <div class="name-group">
+                  <label>Full Name</label><br>
+                  <input type="text" name="fullName">
+                </div>
+                <div class="email-group">
+                  <label>Email</label><br>
+                  <input type="email" name="email">
+                </div>
+              </div>
+              <div class="message-group">
+                <label>Message</label>
+                <textarea name="body"></textarea>
+                <button type="submit" class="send-message">Send Message</button>
+              </div>
+            </div>
           </form>
         </div>
       </div>

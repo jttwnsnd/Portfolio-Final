@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19127",
+"creatorBuild": "19137",
 "files": {
 	"\/css\/about.css": {
 		"fileType": 16,
@@ -41,7 +41,7 @@
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/contact.sass",
 		"outputAbbreviatedPath": "\/css\/contact.css",
@@ -201,6 +201,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/blackjack_snippet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57402,
+		"inputAbbreviatedPath": "\/images\/blackjack_snippet.png",
+		"outputAbbreviatedPath": "\/images\/blackjack_snippet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/book.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -219,6 +230,17 @@
 		"initialSize": 1.43955e+06,
 		"inputAbbreviatedPath": "\/images\/dc_roast_screenshot.png",
 		"outputAbbreviatedPath": "\/images\/dc_roast_screenshot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/dc_roaster_snippet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78798,
+		"inputAbbreviatedPath": "\/images\/dc_roaster_snippet.png",
+		"outputAbbreviatedPath": "\/images\/dc_roaster_snippet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -465,6 +487,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/political_snippet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69366,
+		"inputAbbreviatedPath": "\/images\/political_snippet.png",
+		"outputAbbreviatedPath": "\/images\/political_snippet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/processor.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -508,6 +541,26 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/images\/zombiez_snippet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57974,
+		"inputAbbreviatedPath": "\/images\/zombiez_snippet.png",
+		"outputAbbreviatedPath": "\/images\/zombiez_snippet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,

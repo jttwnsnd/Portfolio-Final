@@ -1,2 +1,44 @@
+@import 'variables'
 #contact
   padding: 60px
+  .fa-3
+    font-size: 7em
+    color: $dark-green
+    transition: all .7s ease
+    &:hover
+      color: $accent-orange
+  form
+    height: 300px
+    width: 70%
+    margin: auto
+    .grouping
+      padding: 20px
+      .input-group, .message-group
+        position: relative
+        width: 100%
+        margin: 20px 50px
+        text-align: center
+        display: inline-block
+        .name-group
+          top: -30px
+          left: 43px
+          position: absolute
+          display: inline-block
+          width: 35%
+          margin: 20px 15px
+          input
+            padding: 5px
+            width: 100px
+        .email-group
+          top: -30px
+          right: 178px
+          position: absolute
+          width: 35%
+          display: inline-block
+          margin: 20px 15px
+          input
+            width: 200px
+            padding: 5px
+        textarea
+          width: 420px
+          height: 100px

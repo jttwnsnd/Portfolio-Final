@@ -3,7 +3,8 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content="width=device-width, initial-scale=1")
-    title
+    title JT Townsend
+    script(src="https://use.fontawesome.com/60d310a586.js")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bungee+Shade" )
     link(rel="stylesheet", href="css/styles.css")
@@ -18,19 +19,19 @@ html
         ul
           li
             a(href="#home")
-              .menu_option Home
+              .menu_option#menu_home Home
                 .arrow
           li
             a(href="#portfolio")
-              .menu_option Portfolio
+              .menu_option#menu_portfolio Portfolio
                 .arrow
           li
             a(href="#about")
-              .menu_option About
+              .menu_option#menu_about About
                 .arrow
           li
             a(href="#contact")
-              .menu_option Contact
+              .menu_option#menu_contact Contact
                 .arrow
     .main_greet
       .greet_1
@@ -47,7 +48,7 @@ html
             .preview
               .project-overview 
                 .project-name DC Roasters
-                a.project-links(href="www.jt-townsend.com/coffeeSite") Live Demo
+                a.project-links(href="http://www.jt-townsend.com/coffeeSite") Live Demo
                 a.project-links(href="https://github.com/jttwnsnd/NodeEcommerce") Github Repository
                 hr
                 .languages
@@ -61,13 +62,24 @@ html
                     li Express.js
                     li Node.js
             .details
-              .code-snippet
-              .challenges
+              .code-snippet-wrapper
+                .code-snippet
+              .challenges-wrapper
+                .challenges
+                  h3 DC Roasters
+                  .text 
+                    | Getting and transferring all the information I need to display across my 
+                    | views is a big challenge in this project. My solution is to set the entire 
+                    | data to an Angular object 
+                    code $scope.userInfo
+                    |  inside of my 
+                    code function checkFunction()
+                    |  that is invoked every time the view is changed.
           .project#project2
             .preview
               .project-overview
                 .project-name Zombiez
-                a.project-links(href="www.jt-townsend.com/zombiez") Live Demo
+                a.project-links(href="http://www.jt-townsend.com/zombiez") Live Demo
                 a.project-links(href="https://github.com/paigen11/frontend-project") Github Repository
                 hr
                 .languages
@@ -79,13 +91,27 @@ html
                     li Leaflet.js
                     li Mapbox.js
             .details
-              .code-snippet
-              .challenges
+              .code-snippet-wrapper
+                .code-snippet
+              .challenges-wrapper
+                .challenges
+                  h3 Zombiez
+                  .text 
+                    | One challenge that I faced was a menu option failing with jQuery’s abilities to 
+                    | add CSS classes through 
+                    code toggleClass()
+                    |  and 
+                    code addClass()
+                    | . After testing each option meticulously, I noticed the issue hiding in the
+                    code setTimeout()
+                    |  for the option and gave consistency to the menu option by using
+                    code addClass()
+                    |  , preventing the inconsistency for the option.
           .project#project3
             .preview
               .project-overview
                 .project-name Political Tweets
-                a.project-links(href="www.jt-townsend.com/angularTweets") Live Demo
+                a.project-links(href="http://www.jt-townsend.com/angularTweets") Live Demo
                 a.project-links(href="https://github.com/jttwnsnd/agnular-tweets") Github Repository
                 hr
                 .languages
@@ -97,13 +123,24 @@ html
                     li Angular/Angular Routes
                     li Twitter API
             .details
-              .code-snippet
-              .challenges
+              .code-snippet-wrapper
+                .code-snippet
+              .challenges-wrapper
+                .challenges
+                  h3 Political Tweets
+                  .text 
+                    | I incorporate a recent search list history. During implementation I experienced 
+                    | an issue with keeping the list up to date. I resolved the issue by using an array 
+                    | to store the search queries. The array held up to 5 entries and I used Javascript array methods 
+                    code array.unshift()
+                    |  to place new information at the top and 
+                    code array.splice()
+                    |  to keep the list at 5 entries.
           .project#project4
             .preview
               .project-overview
                 .project-name Blackjack
-                a.project-links(href="www.jt-townsend.com/blackjack") Live Demo
+                a.project-links(href="http://www.jt-townsend.com/blackjack") Live Demo
                 a.project-links(href="https://github.com/jttwnsnd/blackjack") Github Repository
                 hr
                 .languages
@@ -113,8 +150,18 @@ html
                     li Javascript
                     li jQuery
             .details
-              .code-snippet
-              .challenges
+              .code-snippet-wrapper
+                .code-snippet
+              .challenges-wrapper
+                .challenges
+                  h3 Blackjack
+                  .text 
+                    | Keeping track of card values is easy until you get to anything Jacks and above. Aces were 
+                    | exceptionally tricky. To help keep track, giving conditionals to control the value 
+                    | is what I found to keep the values in check. With Aces being the special case, I used 
+                    code if((cardValue == 11) && (total > 21))
+                    |  as my conditional to check whether Ace needs to be 1 or 11, creating a dynamic and realistic 
+                    | feel to the game.
       a(href="#about")
         .next-section-arrow#arrow-portfolio
           div.background-arrow
@@ -122,32 +169,53 @@ html
       .section-title
         span About
         .selection
-          div.about_me Being honest... I am a
-            ul
-              li.icon 
-                img(src="images/processor.png")#tech
-                .text Video Game and Tech Lover
-              li.icon 
-                img(src="images/book.png")#learn
-                .text Constant & Hungry Learner
-              li.icon 
-                img(src="images/helmet.png")#hema
-                .text Historical European Martial Arts Practicioner
-              li.icon
-                img(src="images/sunglasses.png")#geek
-                .text Just A Bit Geeky All Around
-          div I am always doing something weird and fun. Be it playing a fantasy game, swinging swords with my buddies, DIY projects, or backpacking
+          div.about_me 
+            .title Being honest... I am a
+            .icon 
+              img(src="images/processor.png")#tech
+              .text Video Game and Tech Lover
+            .icon 
+              img(src="images/book.png")#learn
+              .text Constant & Hungry Learner
+            .icon.hema 
+              img(src="images/helmet.png")#hema
+              .text Historical European Martial Arts Practicioner
+            .icon
+              img(src="images/sunglasses.png")#geek
+              .text  Bit Geeky All Around
+          .highlight_me I am always doing something different and fun. Be it playing a table-top games, swinging swords with my buddies, DIY projects, or backpacking
           
     #contact
       .section-title
         span Contact
         .selection
-          div here is my contact info
-          //- this is my email form
+          div Have a question? Want to get in touch?
+          ul
+            li
+              a(href="http://www.twitter.com/jttwnsnd")
+                i.fa.fa-twitter.fa-3
+            li
+              a(href="http://www.github.com/jttwnsnd") 
+                i.fa.fa-github.fa-3
+            li
+              a(href="jt.a.townsend@gmail.com")
+                i.fa.fa-google.fa-3
+          div Send me a message:
           form(action-"mail.php", method="mail()")
-            input(type="text", name="fullName")
-            input(type="email", name="email")
-            textarea(name="body")
+            .grouping
+              .input-group
+                .name-group
+                  label Full Name
+                  br
+                  input(type="text", name="fullName")
+                .email-group
+                  label Email
+                  br
+                  input(type="email", name="email")
+              .message-group
+                label Message
+                textarea(name="body")
+                button.send-message(type="submit") Send Message
 
     script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
     script(type="text/javascript", src="js/scripts.js")

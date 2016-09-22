@@ -1,17 +1,19 @@
 //arrow and arrow animation for my menu
+@import 'variables'
+
 .arrow
   background-color: transparent
   position: absolute
   top: 58px
   left: 40%
-  border-top: 10px solid #003333
+  border-top: 10px solid $dark-green
   border-left: 10px solid transparent
   border-right:  10px solid transparent
   border-bottom: 10px solid transparent
   transform:  translateY(-10px)
   transition: all .7s ease
 .arrow_drop
-  border-top: 10px solid #9DC462
+  border-top: 10px solid $light-green
   transform:  translateY(0em)
 
 //here is my nav styling
@@ -20,7 +22,7 @@
   position: fixed
   top: 0
   left: 0
-  background-color: #003333
+  background-color: $dark-green
   height: auto
   width: 100%
   z-index: 10
@@ -39,10 +41,10 @@
     font-weight: bold
     padding: 100px 20px 1px 20px
     margin: 30px 10px 10px -70px
-    color: #9DC462
-    background-color: #739D34
+    color: $accent-blue
+    background-color: $light-green
     text-shadow: 0em 1px 2px #57565F
-    border: 1px solid #4F7514
+    border: 1px solid $pastel-dark-green
     span
       position: relative
       top:  -1em
@@ -55,7 +57,7 @@
       top: 92.5%
       border-width: 5px 8px
       border-style:  solid
-      border-color: #4F7514 transparent transparent #4F7514
+      border-color: $pastel-dark-green transparent transparent $pastel-dark-green
     &:before
       content: ' '
       z-index: -1
@@ -66,7 +68,7 @@
       top: 93%
       border-width: 15px 91px
       border-style:  solid
-      border-color: #739D34 #739D34 transparent #739D34
+      border-color: $light-green $light-green transparent $light-green
   #menu
     float: right
     ul
@@ -77,11 +79,11 @@
         display: inline-block
         list-style: none
         .menu_option
-          color:  #9DC462
+          color:  $light-green
           margin: 0 -2px
           padding: 20px 30px
           transition: all .7s ease
           position:  relative
           &:hover
-            background-color: #9DC462
-            color: #5B634F
+            background-color: $light-green
+            color: $accent-blue

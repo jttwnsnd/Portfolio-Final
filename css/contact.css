@@ -1,2 +1,15 @@
+@keyframes moving_arrows_body {
+  0% {
+    top: 515px; }
+  100% {
+    top: 530px; } }
+@keyframes moving_arrows {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(15px); } }
 #contact {
   padding: 60px; }
+  #contact .fa-3 {
+    font-size: 7em;
+    color: #DE8400; }
