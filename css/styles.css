@@ -47,8 +47,8 @@
     font-weight: bold;
     padding: 100px 20px 1px 20px;
     margin: 30px 10px 10px -70px;
-    color: #1A9FAB;
-    background-color: #E0E0E0;
+    color: #E0E0E0;
+    background-color: #1A9FAB;
     text-shadow: 0em 1px 2px #57565F;
     border: 1px solid #6A6A6A; }
     .nav-bar #ribbon-body span {
@@ -74,7 +74,7 @@
       top: 93%;
       border-width: 15px 91px;
       border-style: solid;
-      border-color: #E0E0E0 #E0E0E0 transparent #E0E0E0; }
+      border-color: #1A9FAB #1A9FAB transparent #1A9FAB; }
   .nav-bar #menu {
     float: right; }
     .nav-bar #menu ul {
@@ -318,6 +318,7 @@
   100% {
     transform: translateY(15px); } }
 #contact {
+  background-color: #424242;
   padding: 60px; }
   #contact .fa-3 {
     font-size: 7em;
