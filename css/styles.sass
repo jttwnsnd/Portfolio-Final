@@ -1,0 +1,97 @@
+//importing all my stylesheets
+@import 'menu'
+@import 'greet'
+@import 'portfolio'
+@import 'variables'
+@import 'about'
+@import 'contact'
+
+// $light-green: #9DC462
+// $portfolio-purple: #3C3176
+// $middle-green: #739D34
+// $dark-green: #003333
+// $pastel-dark-green: #5B634F
+// $blue-green-base: #226666
+
+=triangle-1($color)
+  margin: 0 48.5%
+  display: inline-block
+  position: relative
+  border-top: 20px solid $color
+  border-left: 20px solid transparent
+  border-right: 20px solid transparent
+  transition: all 1s ease-in-out
+=triangle-2($color)
+  display: inline-block
+  position: absolute
+  border-top: 11px solid $color
+  border-left: 11px solid transparent
+  border-right: 11px solid transparent
+  top: -20px
+  right: -11px
+  transition: all 1s ease-in-out
+
+// reusable classes
+.next-section-arrow
+  +triangle-1($light-green)
+.section
+  margin-top:  60px
+.section-title
+  font-family: Bungee Shade
+  color:  $light-green
+  font-size:  30px
+  text-align: center
+.circle
+  border-radius:  50%
+  width: 175px
+  height:  175px
+  background-color: pink
+  display: inline-block
+.selection
+  font-family: Ubuntu
+  font-size: 16px
+  text-align: center
+  position: relative
+  ul
+    padding: 0
+    margin: 0
+    margin-top: 30px
+  li
+    margin: 2px
+    padding: 15px 25px
+    display: inline-block
+    list-style: none
+a
+  cursor: default
+.left-two, .left-one, .right-two, .right-one
+  margin: 2%
+a
+  text-decoration: none
+//do not nest this into the menu, gives "phantom coloring"
+
+body
+  background-color: $blue-green-base
+  font-family: Ubuntu
+  margin:  0
+  padding: 0
+  overflow-x: hidden
+  .main_greet
+    a
+      position: bottom
+      width: 100%
+      #greet_arrow
+        animation: moving_arrows_body 1s ease-in-out infinite alternate
+        position: bottom
+        top: 515px
+        .background-arrow
+          +triangle-2($blue-green-base)
+
+  #portfolio
+    padding: 60px 0em
+    height: auto
+    width: 100%
+    background-color: $portfolio-purple
+    #arrow-portfolio
+      animation: moving_arrows 1s ease-in-out infinite alternate
+      .background-arrow
+        +triangle-2($portfolio-purple)

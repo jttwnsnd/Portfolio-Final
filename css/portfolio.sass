@@ -1,0 +1,179 @@
+@import 'variables.sass'
+
+=projectPanels($color, $marginTall, $panelWide)
+  display: inline-block
+  height: 90%
+  width: $panelWide
+  margin: $marginTall 20px
+  background-color: transparentize($color, 0.6)
+
+.project
+  height: 600px
+  width: 95%
+  margin: auto
+.preview
+  margin: 0px 30px
+  position: relative
+  display: inline-block
+  height: 80%
+  width: 55%
+  top: 60px
+  left: 0px
+  transition: all .7s ease-in-out
+  .project-overview
+    color: $dark-green
+    text-align: center
+    position: absolute
+    height: 100%
+    width: 100%
+    opacity: 0
+    transition: all .7s ease
+    background-color: $accent-orange
+    .project-name
+      font-size: 25px
+      margin: 15% auto 5%
+    .project-links
+      padding: 10px 30px
+      text-decoration: none
+      transition: all .7s ease
+      &:link
+        color: $dark-green
+      &:visited
+        color: $dark-green
+      &:hover
+        color: $light-green
+    hr
+      border: 1px solid $accent-orange
+      height: 1px
+      background: linear-gradient(to right, $accent-orange, $light-green, $accent-orange)
+
+
+.details
+  position: relative
+  display: inline-block
+  height: 80%
+  width: 35%
+  margin: 0px 30px
+
+  .code-snippet-wrapper
+    background-color: $accent-darker-blue
+    padding: 20px 0px
+    position: relative
+    height: 200px
+    .code-snippet
+      background:
+        repeat: no-repeat
+        position: center top
+      height: 200px
+      width: 100%
+  .challenges-wrapper
+    display: inline-block
+    .challenges
+      padding: 0px 10px
+      box-sizing: border-box
+      display: inline-block
+
+
+#project1
+  .preview
+    background:
+      image: url('../images/dc_roast_screenshot.png')
+      repeat: no-repeat
+      position: center top
+      size: auto 110%
+    &:hover
+      background:
+        size: auto 100%
+  .details
+    top: -14px
+    .code-snippet-wrapper
+      .code-snippet
+        transition: all 5s ease-in-out
+        background:
+          image: url('../images/dc_roaster_snippet.png')
+          size: auto 220%
+    &:hover .code-snippet
+      background:
+        position: center bottom
+    .challenges-wrapper
+      display: inline-block
+      .challenges
+        display: inline-block
+#project2
+  .preview
+    background:
+      image: url('../images/zombiez_screenshot.png')
+      repeat: no-repeat
+      position: center top
+      size: auto 110%
+    &:hover
+      background:
+        size: auto 100%
+  .details
+    top: 5px
+    .code-snippet-wrapper
+      .code-snippet
+        transition: all 5s ease-in-out
+        background:
+          image: url('../images/zombiez_snippet.png')
+          size: auto 220%
+    &:hover .code-snippet
+      background:
+        position: center bottom
+    .challenges-wrapper
+      display: inline-block
+      .challenges
+        display: inline-block
+
+#project3
+  .preview
+    background:
+      image: url('../images/political_screenshot.png')
+      repeat: no-repeat
+      position: center top
+      size: auto 110%
+    &:hover
+      background:
+        size: auto 100%
+  .details
+    top: 3px
+    .code-snippet-wrapper
+      .code-snippet
+        transition: all 5s ease-in-out
+        background:
+          image: url('../images/political_snippet.png')
+          size: auto 220%
+    &:hover .code-snippet
+      background:
+        position: center bottom
+    .challenges-wrapper
+      display: inline-block
+      .challenges
+        display: inline-block
+        p
+          font-size: 14px
+#project4
+  .preview
+    background:
+      image: url('../images/blackjack_screenshot.png')
+      repeat: no-repeat
+      position: center top
+      size: 110% auto
+    &:hover
+      background:
+        size: 100% auto
+  .details
+    top: 22px
+    .code-snippet-wrapper
+      .code-snippet
+        transition: all 5s ease-in-out
+        background:
+          image: url('../images/blackjack_snippet.png')
+          size: auto 220%
+    &:hover .code-snippet
+      background:
+        position: center bottom
+    .challenges-wrapper
+      display: inline-block
+      .challenges
+        display: inline-block

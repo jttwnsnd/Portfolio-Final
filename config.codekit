@@ -2,6 +2,122 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19137",
 "files": {
+	"\/css\/about.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/about.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/about.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/about.sass",
+		"outputAbbreviatedPath": "\/css\/about.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/css\/contact.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/contact.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/contact.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/contact.sass",
+		"outputAbbreviatedPath": "\/css\/contact.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/css\/greet.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/greet.sass",
+		"outputAbbreviatedPath": "\/css\/greet.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/css\/menu.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/menu.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/menu.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/menu.sass",
+		"outputAbbreviatedPath": "\/css\/menu.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/css\/portfolio.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/portfolio.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/portfolio.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/portfolio.sass",
+		"outputAbbreviatedPath": "\/css\/portfolio.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/css\/reset.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -13,12 +129,44 @@
 		},
 	"\/css\/styles.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/styles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/css\/styles.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/styles.sass",
+		"outputAbbreviatedPath": "\/css\/styles.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/css\/variables.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/variables.sass",
+		"outputAbbreviatedPath": "\/css\/variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
 		},
 	"\/greet_photo_to_edit.jpg": {
 		"fileType": 16384,
@@ -31,234 +179,168 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/backdrop.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 255245,
-		"inputAbbreviatedPath": "\/images\/backdrop.jpg",
-		"outputAbbreviatedPath": "\/images\/backdrop.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/dev-logos\/AngularJS.png": {
+	"\/images\/blackjack_screenshot.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 35575,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/AngularJS.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/AngularJS.png",
+		"initialSize": 1.36326e+06,
+		"inputAbbreviatedPath": "\/images\/blackjack_screenshot.png",
+		"outputAbbreviatedPath": "\/images\/blackjack_screenshot.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/apache.png": {
+	"\/images\/blackjack_snippet.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 24372,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/apache.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/apache.png",
+		"initialSize": 57402,
+		"inputAbbreviatedPath": "\/images\/blackjack_snippet.png",
+		"outputAbbreviatedPath": "\/images\/blackjack_snippet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/bootstrap.png": {
+	"\/images\/book.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 55257,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/bootstrap.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/bootstrap.png",
+		"initialSize": 696,
+		"inputAbbreviatedPath": "\/images\/book.png",
+		"outputAbbreviatedPath": "\/images\/book.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/CSS3.png": {
+	"\/images\/dc_roast_screenshot.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20798,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/CSS3.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/CSS3.png",
+		"initialSize": 1.43955e+06,
+		"inputAbbreviatedPath": "\/images\/dc_roast_screenshot.png",
+		"outputAbbreviatedPath": "\/images\/dc_roast_screenshot.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/github.png": {
+	"\/images\/dc_roaster_snippet.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 36731,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/github.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/github.png",
+		"initialSize": 78798,
+		"inputAbbreviatedPath": "\/images\/dc_roaster_snippet.png",
+		"outputAbbreviatedPath": "\/images\/dc_roaster_snippet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/HTML5.png": {
+	"\/images\/helmet.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7464,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/HTML5.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/HTML5.png",
+		"initialSize": 982,
+		"inputAbbreviatedPath": "\/images\/helmet.png",
+		"outputAbbreviatedPath": "\/images\/helmet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/ionic-logo-blog.png": {
+	"\/images\/political_screenshot.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4111,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/ionic-logo-blog.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/ionic-logo-blog.png",
+		"initialSize": 92813,
+		"inputAbbreviatedPath": "\/images\/political_screenshot.png",
+		"outputAbbreviatedPath": "\/images\/political_screenshot.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/ionic.jpeg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4949,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/ionic.jpeg",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/ionic.jpeg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/dev-logos\/ionic_logo.png": {
+	"\/images\/political_snippet.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 28293,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/ionic_logo.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/ionic_logo.png",
+		"initialSize": 69366,
+		"inputAbbreviatedPath": "\/images\/political_snippet.png",
+		"outputAbbreviatedPath": "\/images\/political_snippet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/javascript.png": {
+	"\/images\/processor.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 13850,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/javascript.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/javascript.png",
+		"initialSize": 1709,
+		"inputAbbreviatedPath": "\/images\/processor.png",
+		"outputAbbreviatedPath": "\/images\/processor.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/jQuery.png": {
+	"\/images\/sunglasses.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18859,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/jQuery.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/jQuery.png",
+		"initialSize": 659,
+		"inputAbbreviatedPath": "\/images\/sunglasses.png",
+		"outputAbbreviatedPath": "\/images\/sunglasses.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/Linux.png": {
+	"\/images\/zombiez_screenshot.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 37838,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/Linux.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/Linux.png",
+		"initialSize": 2.00757e+06,
+		"inputAbbreviatedPath": "\/images\/zombiez_screenshot.png",
+		"outputAbbreviatedPath": "\/images\/zombiez_screenshot.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/dev-logos\/mongodB.png": {
+	"\/images\/zombiez_snippet.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20464,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/mongodB.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/mongodB.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/dev-logos\/mysql.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 57941,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/mysql.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/mysql.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/dev-logos\/node.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20900,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/node.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/node.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/dev-logos\/python-logo-glassy2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 69003,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/python-logo-glassy2.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/python-logo-glassy2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/dev-logos\/sass.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 32568,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/sass.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/sass.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/dev-logos\/sketch.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 51780,
-		"inputAbbreviatedPath": "\/images\/dev-logos\/sketch.png",
-		"outputAbbreviatedPath": "\/images\/dev-logos\/sketch.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/foggy-background.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 666123,
-		"inputAbbreviatedPath": "\/images\/foggy-background.jpg",
-		"outputAbbreviatedPath": "\/images\/foggy-background.jpg",
+		"initialSize": 57974,
+		"inputAbbreviatedPath": "\/images\/zombiez_snippet.png",
+		"outputAbbreviatedPath": "\/images\/zombiez_snippet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/index.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.jade",
+		"outputAbbreviatedPath": "\/index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/js\/min\/scripts-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/scripts-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/scripts-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/js\/scripts.js": {
 		"fileType": 64,
@@ -270,17 +352,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/jt-logo-black.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18277,
-		"inputAbbreviatedPath": "\/jt-logo-black.jpg",
-		"outputAbbreviatedPath": "\/jt-logo-black.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/my_approach.md": {
 		"criticStyle": 0,
@@ -303,17 +374,6 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/placeholder.jpeg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 165733,
-		"inputAbbreviatedPath": "\/placeholder.jpeg",
-		"outputAbbreviatedPath": "\/placeholder.jpeg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/Portfolio Attempt 1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -325,20 +385,11 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/portfolio-homework\/css\/styles.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/portfolio-homework\/css\/styles.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/portfolio-homework\/index.html": {
+	"\/readme.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/portfolio-homework\/index.html",
+		"inputAbbreviatedPath": "\/readme.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
