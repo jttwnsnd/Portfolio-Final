@@ -16,8 +16,3 @@
 <p>This concept is a redoing of my other portfolio. Not that I hated it, I just wanted it different. Stretch creative muscles.</p>
 
 <h3>Challenges</h3>
-	<ul>
-		<li>Menu Arrows
-			<p> When I transferred all my files to a more structured format (Sass), I noticed my menu arrows were "phantom drawing" their color where I had placed transparencies. I tested the actual css, even renamed the classes. I finally tested if, due to the Sass nesting, that they inherited something unwanted. So I moved them out, and they worked great. Was worth the challenge since I now will check nesting and inheritance.<p>
-		</li>
-	</ul>
