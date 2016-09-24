@@ -33,7 +33,7 @@ html
             a(href="#contact")
               .menu_option#menu_contact Contact
                 .arrow
-    .main_greet
+    .main_greet#greet
       .greet_1
         span Hello, I'm JT
         .greet_2 A Web Developer and Interactive Artist
@@ -164,12 +164,12 @@ html
                     | feel to the game.
       a(href="#about")
         .next-section-arrow#arrow-portfolio
-          div.background-arrow
+          .background-arrow
     #about
       .section-title
         span About
         .selection
-          div.about_me 
+          .about_me 
             .title In addition to being a developer, I am a
             .icon 
               img(src="images/processor.png")#tech
@@ -184,12 +184,15 @@ html
               img(src="images/sunglasses.png")#geek
               .text  Bit Geeky All Around
           .highlight_me I am always doing something different and fun. Be it playing a table-top games, swinging swords with my buddies, DIY projects, or backpacking
-          
+      a(href="#contact")
+        .next-section-arrow#arrow-about
+          .background-arrow
     #contact
       .section-title
-        span Contact
+        .contact Contact
         .selection
-          div Have a question? Want to get in touch?
+          .photo(src-"../images/headshot_1.jpg")
+          .contact Have a question? Want to get in touch?
           ul
             li
               a(href="http://www.twitter.com/dev_jt")
