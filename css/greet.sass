@@ -2,10 +2,16 @@
 
 #greet
   background:
-    image: url('../images/headshot_3.jpg')
-    size: 160%
+    image: url('../images/greet_headshot.jpg')
+    size: contain
     repeat: no-repeat
-    position: 140px -400px
+    position: right bottom
+  @media screen and (max-width: $breakpoint-mobile)
+    background:
+      size: auto 100%
+      repeat: no-repeat
+      position: right bottom
+
 .main_greet
   color:  $accent-darker-blue
   font-family: Bungee Shade
@@ -13,16 +19,23 @@
   padding: 60px
   height: 660px
   width: 100%
+  @media screen and (max-width: $breakpoint-tablet)
+    height: 450px
   .greet_1
-    font-size: 2.500em
-    position: relative
-    top: 30%
-    left: 25%
+    margin-top: 100px
+    font-size: 40px
+    @media screen and (max-width: $breakpoint-tablet)
+      font-size: 32px
     .greet_2
       margin: 20px 0px
       font-family: Ubuntu
       font-size: 20px
-      position: absolute
-      // -ms-transform-origin: 0 0
-      // -webkit-transform-origin: 0 0
-      // transform: rotateZ(20deg)
+      @media screen and (max-width: $breakpoint-mobile)
+        font-size: 15px
+  a
+    width: 100%
+    #greet_arrow
+      animation: moving_arrows 1.5s ease infinite
+      +triangle-1($accent-red)
+      .background-arrow
+        +triangle-2(#FEFCFD)

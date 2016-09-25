@@ -20,15 +20,33 @@ $accent-orange: #F88909
 $accent-red: #EE242F
 $accent-purple: #89378A
 
+//breakpoints for responsive design - found on css-tricks.com
+$breakpoint-mobile: 600px
+$breakpoint-tablet: 768px
+$breakpoint-desktop: 950px
 
-
-@keyframes moving_arrows_body
-  0%
-    top: 515px
-  100%
-    top: 530px
 @keyframes moving_arrows
   0%
     transform: translateY(0px)
+    opacity: 1
   100%
     transform: translateY(15px)
+    opacity: 0
+
+=triangle-1($color)
+  margin: 0 48.5%
+  display: inline-block
+  position: relative
+  border-top: 20px solid $color
+  border-left: 20px solid transparent
+  border-right: 20px solid transparent
+  transition: all 1s ease-in-out
+=triangle-2($color)
+  display: inline-block
+  position: absolute
+  border-top: 11px solid $color
+  border-left: 11px solid transparent
+  border-right: 11px solid transparent
+  top: -20px
+  right: -11px
+  transition: all 1s ease-in-out

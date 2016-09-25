@@ -1,75 +1,72 @@
 @import 'variables.sass'
 
-=projectPanels($color, $marginTall, $panelWide)
-  display: inline-block
-  height: 90%
-  width: $panelWide
-  margin: $marginTall 20px
-  background-color: transparentize($color, 0.6)
+#portfolio
+  height: auto
+  width: 100%
+  background-color: $portfolio-purple
 
 .project
-  height: 600px
-  width: 95%
-  margin: auto
-.preview
-  margin: 0px 30px
-  position: relative
-  display: inline-block
-  height: 80%
-  width: 55%
-  top: 60px
-  left: 0px
-  transition: all .7s ease-in-out
-  .project-overview
-    color: $dark-green
-    text-align: center
-    position: absolute
-    height: 100%
-    width: 100%
-    opacity: 0
-    transition: all .7s ease
-    background-color: $accent-orange
-    .project-name
-      font-size: 25px
-      margin: 15% auto 5%
-    .project-links
-      padding: 10px 30px
-      text-decoration: none
+  padding: 60px 20px 0px 20px
+  .preview
+    display: inline-block
+    height: 500px
+    transition: all .7s ease-in-out
+    @media screen and (min-width: $breakpoint-mobile)
+      margin: 0px
+    .project-overview
+      color: $dark-green
+      text-align: center
+      position: absolute
+      height: 100%
+      width: 100%
+      opacity: 0
       transition: all .7s ease
-      &:link
-        color: $dark-green
-      &:visited
-        color: $dark-green
-      &:hover
-        color: $light-green
-    hr
-      border: 1px solid $accent-orange
-      height: 1px
-      background: linear-gradient(to right, $accent-orange, $light-green, $accent-orange)
-
+      background-color: $accent-orange
+      .project-name
+        font-size: 25px
+        margin: 15% auto 5%
+      .project-links
+        padding: 10px 30px
+        text-decoration: none
+        transition: all .7s ease
+        &:link
+          color: $dark-green
+        &:visited
+          color: $dark-green
+        &:hover
+          color: $light-green
+      hr
+        border: 1px solid $accent-orange
+        height: 1px
+        background: linear-gradient(to right, $accent-orange, $light-green, $accent-orange)
+.links-for-mobile
+  padding: 20px 0px
+  a
+    transition: all .7s ease
+    color: $accent-orange
+    &:hover
+      color: $light-green
+      text-decoration: none
 
 .details
   position: relative
   display: inline-block
-  height: 80%
-  width: 35%
-  margin: 0px 30px
 
   .code-snippet-wrapper
     background-color: $accent-darker-blue
     padding: 20px 0px
     position: relative
-    height: 200px
     .code-snippet
       background:
         repeat: no-repeat
-        position: center top
+        position: left top
+        size: 100%
       height: 200px
-      width: 100%
+      box-sizing: border-box
   .challenges-wrapper
     display: inline-block
     .challenges
-      padding: 0px 10px
+      padding: 0px 20px
       box-sizing: border-box
       display: inline-block
 
@@ -85,7 +82,6 @@
       background:
         size: auto 100%
   .details
-    top: -14px
     .code-snippet-wrapper
       .code-snippet
         transition: all 5s ease-in-out
@@ -110,7 +106,6 @@
       background:
         size: auto 100%
   .details
-    top: 5px
     .code-snippet-wrapper
       .code-snippet
         transition: all 5s ease-in-out
@@ -136,7 +131,6 @@
       background:
         size: auto 100%
   .details
-    top: 3px
     .code-snippet-wrapper
       .code-snippet
         transition: all 5s ease-in-out
@@ -163,7 +157,6 @@
       background:
         size: 100% auto
   .details
-    top: 22px
     .code-snippet-wrapper
       .code-snippet
         transition: all 5s ease-in-out
@@ -177,3 +170,9 @@
       display: inline-block
       .challenges
         display: inline-block
+#arrow-portfolio
+  margin-top: 20px
+  margin-bottom: 20px
+  animation: moving_arrows 1.5s ease infinite
+  .background-arrow
+    +triangle-2($portfolio-purple)
