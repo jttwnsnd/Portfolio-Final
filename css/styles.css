@@ -316,9 +316,9 @@
   background-image: url("../images/blackjack_screenshot.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 110% auto; }
+  background-size: auto 110%; }
   #project4 .preview:hover {
-    background-size: 100% auto; }
+    background-size: auto 100%; }
 #project4 .details .code-snippet-wrapper .code-snippet {
   transition: all 5s ease-in-out;
   background-image: url("../images/blackjack_snippet.png");
