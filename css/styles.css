@@ -222,6 +222,8 @@
           color: #111111; }
         .project .preview .project-overview .project-links:hover {
           color: #E0E0E0; }
+      .project .preview .project-overview .languages .lang {
+        padding: 10px 0px; }
       .project .preview .project-overview hr {
         border: 1px solid #F88909;
         height: 1px;
