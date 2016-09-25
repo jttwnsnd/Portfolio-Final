@@ -72,72 +72,78 @@ html
         .col-xs-12#portfolio
           .row.section-title
             .col-xs-12.text-center Portfolio
-              .row.selection
-                .col-xs-12.project#project1
-                    .col-xs-12.col-sm-7.preview
+          .row.selection
+            .col-xs-12.project#project1
+              .row
+                .col-xs-12.col-sm-7.preview
+                  .row
+                    .col-xs-12.col-sm-7.project-overview 
+                      .project-name DC Roasters
+                      a.project-links(href="/coffeeSite") Live Demo
+                      a.project-links(href="https://github.com/jttwnsnd/NodeEcommerce") Github Repository
+                      hr
+                      .languages
+                        ul
+                          li Jade/HTML
+                          li Sass/Bootstrap/CSS
+                          li Javascript
+                          li jQuery
+                          li Angular
+                          li Mongoose/MongoDB
+                          li Express.js
+                          li Node.js
+                .col-xs-12.col-sm-4.col-sm-offset-1.details
+                  .row
+                    .col-xs-12.code-snippet-wrapper
                       .row
-                        .col-xs-12.col-sm-7.project-overview 
-                          .project-name DC Roasters
-                          a.project-links(href="/coffeeSite") Live Demo
-                          a.project-links(href="https://github.com/jttwnsnd/NodeEcommerce") Github Repository
-                          hr
-                          .languages
-                            ul
-                              li Jade/HTML
-                              li Sass/Bootstrap/CSS
-                              li Javascript
-                              li jQuery
-                              li Angular
-                              li Mongoose/MongoDB
-                              li Express.js
-                              li Node.js
-                    .col-xs-12.col-sm-4.col-sm-offset-1.details
-                      .row
-                        .col-xs-12.code-snippet-wrapper
-                          .col-xs-12.code-snippet
-                      .row.challenges-wrapper
-                        .col-xs-12.challenges
-                          h3 DC Roasters Challenges
-                          .text 
-                            | Getting and transferring all the information I need to display across my 
-                            | views is a big challenge in this project. My solution is to set the entire 
-                            | data to an Angular object 
-                            code $scope.userInfo
-                            |  inside of my 
-                            code function checkFunction()
-                            |  that is invoked every time the view is changed.
-              .project#project2
-                .preview
-                  .project-overview
-                    .project-name Zombiez
-                    a.project-links(href="/zombiez") Live Demo
-                    a.project-links(href="https://github.com/paigen11/frontend-project") Github Repository
-                    hr
-                    .languages
-                      ul
-                        li HTML
-                        li CSS
-                        li Javascript
-                        li jQuery
-                        li Leaflet.js
-                        li Mapbox.js
-                .details
-                  .code-snippet-wrapper
-                    .code-snippet
-                  .challenges-wrapper
-                    .challenges
-                      h3 Zombiez Challenges
+                        .col-xs-12.code-snippet
+                  .row.challenges-wrapper
+                    .col-xs-12.challenges
+                      h3 DC Roasters Challenges
                       .text 
-                        | One challenge that I faced was a menu option failing with jQuery’s abilities to 
-                        | add CSS classes through 
-                        code toggleClass()
-                        |  and 
-                        code addClass()
-                        | . After testing each option meticulously, I noticed the issue hiding in the
-                        code setTimeout()
-                        |  for the option and gave consistency to the menu option by using
-                        code addClass()
-                        |  , preventing the inconsistency for the option.
+                        | Getting and transferring all the information I need to display across my 
+                        | views is a big challenge in this project. My solution is to set the entire 
+                        | data to an Angular object 
+                        code $scope.userInfo
+                        |  inside of my 
+                        code function checkToken()
+                        |  that is invoked every time the view is changed.
+            .col-xs-12.project#project2
+              .row
+                .col-xs-12.col-sm-7.preview
+                  .row
+                    .col-xs-12.col-sm-7.project-overview
+                      .project-name Zombiez
+                      a.project-links(href="/zombiez") Live Demo
+                      a.project-links(href="https://github.com/paigen11/frontend-project") Github Repository
+                      hr
+                      .languages
+                        ul
+                          li HTML
+                          li CSS
+                          li Javascript
+                          li jQuery
+                          li Leaflet.js
+                          li Mapbox.js
+                .col-xs-12.col-sm-4.col-sm-offset-1.details
+                  .row
+                    .col-xs-12.code-snippet-wrapper
+                      .col-xs-12.code-snippet
+                    .row.challenges-wrapper
+                      .col-xs-12.challenges
+                        .row
+                          h3.col-xs-12 Zombiez Challenges
+                          .col-xs-12.text 
+                            | One challenge that I faced was a menu option failing with jQuery’s abilities to 
+                            | add CSS classes through 
+                            code toggleClass()
+                            |  and 
+                            code addClass()
+                            | . After testing each option meticulously, I noticed the issue hiding in the
+                            code setTimeout()
+                            |  for the option and gave consistency to the menu option by using
+                            code addClass()
+                            |  , preventing the inconsistency for the option.
               .project#project3
                 .preview
                   .project-overview
