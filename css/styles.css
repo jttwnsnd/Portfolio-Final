@@ -9,24 +9,28 @@
   .arrow {
     background-color: transparent;
     position: absolute;
-    top: 58px;
+    top: 100%;
     left: 40%;
-    border-top: 10px solid #111111;
+    border-top: 10px solid #E0E0E0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
     transform: translateY(-10px);
-    transition: all 0.7s ease; }
-
-  .arrow_drop {
-    border-top: 10px solid #E0E0E0;
-    transform: translateY(0px); } }
+    opacity: 0;
+    transition: all 0.7s ease; } }
 @media screen and (min-width: 768px) {
   .arrow {
     margin: 0; }
 
   .arrow_drop {
     margin: 0; } }
+.menu_option:hover .arrow {
+  transform: translateY(0px);
+  opacity: 1; }
+
+.navbar {
+  border: none; }
+
 .jt-nav {
   position: fixed;
   top: 0;
@@ -93,15 +97,25 @@
       border-color: #00A6C3 #00A6C3 transparent #00A6C3; }
   .icon-bar #jt-nav-collapse #menu {
     margin: 0; }
-    .icon-bar #jt-nav-collapse #menu .menu_option {
-      color: #E0E0E0;
-      margin: 0 -2px;
-      padding: 20px 30px;
-      transition: all 0.7s ease;
-      position: relative; }
-      .icon-bar #jt-nav-collapse #menu .menu_option:hover {
-        background-color: #E0E0E0;
-        color: #00A6C3; }
+
+.navbar-nav > li > a {
+  color: #E0E0E0;
+  transition: all 0.7s ease; }
+  .navbar-nav > li > a:active {
+    color: #00A6C3;
+    background-color: #111111; }
+  .navbar-nav > li > a:hover {
+    background-color: #E0E0E0;
+    color: #00A6C3 !important; }
+
+.navbar-brand {
+  color: #0086BC;
+  transition: all 0.7s ease; }
+  .navbar-brand:hover {
+    color: #00A6C3; }
+
+.active {
+  color: #00A6C3; }
 
 @keyframes moving_arrows {
   0% {
@@ -172,10 +186,14 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+#portfolio {
+  height: auto;
+  width: 100%;
+  background-color: #424242; }
+
 .project {
   padding: 60px 20px 0px 20px; }
   .project .preview {
-    margin: 0px 30px;
     display: inline-block;
     height: 500px;
     transition: all 0.7s ease-in-out; }
@@ -209,6 +227,15 @@
         height: 1px;
         background: linear-gradient(to right, #F88909, #E0E0E0, #F88909); }
 
+.links-for-mobile {
+  padding: 20px 0px; }
+  .links-for-mobile a {
+    transition: all 0.7s ease;
+    color: #F88909; }
+    .links-for-mobile a:hover {
+      color: #E0E0E0;
+      text-decoration: none; }
+
 .details {
   position: relative;
   display: inline-block; }
@@ -218,9 +245,10 @@
     position: relative; }
     .details .code-snippet-wrapper .code-snippet {
       background-repeat: no-repeat;
-      background-position: center top;
+      background-position: left top;
+      background-size: 100%;
       height: 200px;
-      width: 100%; }
+      box-sizing: border-box; }
   .details .challenges-wrapper {
     display: inline-block; }
     .details .challenges-wrapper .challenges {
@@ -271,20 +299,18 @@
   background-size: auto 110%; }
   #project3 .preview:hover {
     background-size: auto 100%; }
-#project3 .details {
-  top: 3px; }
-  #project3 .details .code-snippet-wrapper .code-snippet {
-    transition: all 5s ease-in-out;
-    background-image: url("../images/political_snippet.png");
-    background-size: auto 220%; }
-  #project3 .details:hover .code-snippet {
-    background-position: center bottom; }
-  #project3 .details .challenges-wrapper {
+#project3 .details .code-snippet-wrapper .code-snippet {
+  transition: all 5s ease-in-out;
+  background-image: url("../images/political_snippet.png");
+  background-size: auto 220%; }
+#project3 .details:hover .code-snippet {
+  background-position: center bottom; }
+#project3 .details .challenges-wrapper {
+  display: inline-block; }
+  #project3 .details .challenges-wrapper .challenges {
     display: inline-block; }
-    #project3 .details .challenges-wrapper .challenges {
-      display: inline-block; }
-      #project3 .details .challenges-wrapper .challenges p {
-        font-size: 14px; }
+    #project3 .details .challenges-wrapper .challenges p {
+      font-size: 14px; }
 
 #project4 .preview {
   background-image: url("../images/blackjack_screenshot.png");
@@ -293,20 +319,20 @@
   background-size: 110% auto; }
   #project4 .preview:hover {
     background-size: 100% auto; }
-#project4 .details {
-  top: 22px; }
-  #project4 .details .code-snippet-wrapper .code-snippet {
-    transition: all 5s ease-in-out;
-    background-image: url("../images/blackjack_snippet.png");
-    background-size: auto 220%; }
-  #project4 .details:hover .code-snippet {
-    background-position: center bottom; }
-  #project4 .details .challenges-wrapper {
+#project4 .details .code-snippet-wrapper .code-snippet {
+  transition: all 5s ease-in-out;
+  background-image: url("../images/blackjack_snippet.png");
+  background-size: auto 220%; }
+#project4 .details:hover .code-snippet {
+  background-position: center bottom; }
+#project4 .details .challenges-wrapper {
+  display: inline-block; }
+  #project4 .details .challenges-wrapper .challenges {
     display: inline-block; }
-    #project4 .details .challenges-wrapper .challenges {
-      display: inline-block; }
 
 #arrow-portfolio {
+  margin-top: 20px;
+  margin-bottom: 20px;
   animation: moving_arrows 1.5s ease infinite; }
   #arrow-portfolio .background-arrow {
     display: inline-block;
@@ -332,25 +358,43 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
-#about {
-  padding: 60px; }
-  #about .section-title {
+#about .section-title {
+  color: #0086BC; }
+#about .about_me {
+  font-size: 20px;
+  margin-top: 15px; }
+  #about .about_me .title {
+    display: block;
     color: #0086BC; }
-  #about .about_me {
-    font-size: 20px;
-    margin: 15px; }
-    #about .about_me .title {
-      display: block; }
-    #about .about_me .icon {
-      display: inline-block;
-      height: 150px;
-      width: 25%;
-      margin: 2.5%; }
-    #about .about_me .text {
-      font-size: 14px; }
-  #about .highlight_me {
-    color: #EE242F;
-    margin: 20px; }
+  #about .about_me .icon {
+    display: inline-block;
+    height: 150px; }
+  #about .about_me .text {
+    font-size: 14px; }
+#about .highlight_me {
+  color: #EE242F;
+  margin: 20px; }
+
+#arrow-about {
+  margin-bottom: 20px;
+  animation: moving_arrows 1.5s ease infinite;
+  top: 0px;
+  margin: 0 48.5%;
+  display: inline-block;
+  position: relative;
+  border-top: 20px solid #EE242F;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transition: all 1s ease-in-out; }
+  #arrow-about .background-arrow {
+    display: inline-block;
+    position: absolute;
+    border-top: 11px solid #FFF;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    top: -20px;
+    right: -11px;
+    transition: all 1s ease-in-out; }
 
 @keyframes moving_arrows {
   0% {
@@ -360,10 +404,11 @@
     transform: translateY(15px);
     opacity: 0; } }
 #contact {
-  background-color: #424242;
-  padding: 60px; }
-  #contact .section-title .contact {
-    margin: 20px 0px; }
+  background-color: #424242; }
+  #contact .section-title {
+    padding-top: 30px; }
+    #contact .section-title .contact {
+      margin: 20px 0px; }
   #contact .photo {
     margin: auto;
     background-image: url("../images/headshot_1.jpg");
@@ -379,41 +424,58 @@
     transition: all 0.7s ease; }
     #contact .fa-3:hover {
       color: #F88909; }
-  #contact form {
+
+.send-message {
+  padding: 15px; }
+
+.email {
+  padding-bottom: 30px;
+  color: #F88909; }
+  .email form {
     height: 300px;
     width: 70%;
     margin: auto; }
-    #contact form .grouping {
+    .email form .grouping {
       padding: 20px; }
-      #contact form .grouping .input-group, #contact form .grouping .message-group {
+      .email form .grouping .input-group, .email form .grouping .message-group {
         position: relative;
         width: 100%;
         margin: 20px 50px;
         text-align: center;
         display: inline-block; }
-        #contact form .grouping .input-group .name-group, #contact form .grouping .message-group .name-group {
+        .email form .grouping .input-group .name-group, .email form .grouping .message-group .name-group {
           top: -30px;
           left: 43px;
           position: absolute;
           display: inline-block;
           width: 35%;
           margin: 20px 15px; }
-          #contact form .grouping .input-group .name-group input, #contact form .grouping .message-group .name-group input {
+          .email form .grouping .input-group .name-group input, .email form .grouping .message-group .name-group input {
             padding: 5px;
             width: 100px; }
-        #contact form .grouping .input-group .email-group, #contact form .grouping .message-group .email-group {
+        .email form .grouping .input-group .email-group, .email form .grouping .message-group .email-group {
           top: -30px;
           right: 178px;
           position: absolute;
           width: 35%;
           display: inline-block;
           margin: 20px 15px; }
-          #contact form .grouping .input-group .email-group input, #contact form .grouping .message-group .email-group input {
+          .email form .grouping .input-group .email-group input, .email form .grouping .message-group .email-group input {
             width: 200px;
             padding: 5px; }
-        #contact form .grouping .input-group textarea, #contact form .grouping .message-group textarea {
+        .email form .grouping .input-group textarea, .email form .grouping .message-group textarea {
           width: 420px;
           height: 100px; }
+
+@keyframes moving_arrows {
+  0% {
+    transform: translateY(0px);
+    opacity: 1; }
+  100% {
+    transform: translateY(15px);
+    opacity: 0; } }
+.jt-footer {
+  padding: 20px; }
 
 .next-section-arrow {
   margin: 0 48.5%;
@@ -431,6 +493,7 @@
   font-family: Bungee Shade;
   color: #E0E0E0;
   font-size: 30px;
+  padding-top: 60px;
   text-align: center; }
 
 .selection {
@@ -463,27 +526,3 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
-  body #portfolio {
-    padding: 60px 0em;
-    height: auto;
-    width: 100%;
-    background-color: #424242; }
-  body #about a #arrow-about {
-    animation: moving_arrows 1s ease infinite alternate;
-    top: 0px;
-    margin: 0 48.5%;
-    display: inline-block;
-    position: relative;
-    border-top: 20px solid #EE242F;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    transition: all 1s ease-in-out; }
-    body #about a #arrow-about .background-arrow {
-      display: inline-block;
-      position: absolute;
-      border-top: 11px solid #FFF;
-      border-left: 11px solid transparent;
-      border-right: 11px solid transparent;
-      top: -20px;
-      right: -11px;
-      transition: all 1s ease-in-out; }

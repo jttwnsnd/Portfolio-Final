@@ -5,24 +5,29 @@
   .arrow
     background-color: transparent
     position: absolute
-    top: 58px
+    top: 100%
     left: 40%
-    border-top: 10px solid $dark-green
+    border-top: 10px solid $light-green
     border-left: 10px solid transparent
     border-right:  10px solid transparent
     border-bottom: 10px solid transparent
     transform:  translateY(-10px)
+    opacity: 0
     transition: all .7s ease
-  .arrow_drop
-    border-top: 10px solid $light-green
-    transform:  translateY(0px)
 @media screen and (min-width: $breakpoint-tablet)
   .arrow
     margin: 0
   .arrow_drop
     margin: 0
+.menu_option
+  &:hover
+    .arrow
+      transform:  translateY(0px)
+      opacity: 1
 
 //here is my nav styling
+.navbar
+  border: none
 .jt-nav
   position: fixed
   top: 0
@@ -90,12 +95,20 @@
   #jt-nav-collapse
     #menu
       margin:  0
-      .menu_option
-        color:  $light-green
-        margin: 0 -2px
-        padding: 20px 30px
-        transition: all .7s ease
-        position:  relative
-        &:hover
-          background-color: $light-green
-          color: $accent-blue
+
+.navbar-nav > li > a
+  color:  $light-green
+  transition: all .7s ease
+  &:active
+    color: $accent-blue
+    background-color: $dark-green
+  &:hover
+    background-color: $light-green
+    color: $accent-blue !important
+.navbar-brand
+  color: $accent-darker-blue
+  transition: all .7s ease
+  &:hover
+    color: $accent-blue
+.active
+  color: $accent-blue

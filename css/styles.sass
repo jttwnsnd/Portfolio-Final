@@ -5,6 +5,7 @@
 @import 'variables'
 @import 'about'
 @import 'contact'
+@import 'footer'
 
 // $light-green: #9DC462
 // $portfolio-purple: #3C3176
@@ -22,6 +23,7 @@
   font-family: Bungee Shade
   color:  $light-green
   font-size:  30px
+  padding-top: 60px
   text-align: center
 .selection
   font-family: Ubuntu
@@ -51,16 +53,3 @@ body
   margin:  0
   padding: 0
   overflow-x: hidden
-  #portfolio
-    padding: 60px 0em
-    height: auto
-    width: 100%
-    background-color: $portfolio-purple
-  #about
-    a
-      #arrow-about
-        animation: moving_arrows 1s ease infinite alternate
-        top: 0px
-        +triangle-1($accent-red)
-        .background-arrow
-          +triangle-2(#FFF)

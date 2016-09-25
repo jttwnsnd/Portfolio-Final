@@ -25,38 +25,18 @@ html
         //- Collect the nav links, forms, and other content for toggling
         .collapse.navbar-collapse#jt-nav-collapse
           ul.nav.navbar-nav.navbar-right#menu
-            li.menu_option
-              a(href="#portfolio") Portfolio
+            li
+              a.menu_option(href="#portfolio") Portfolio
+                .hidden-xs.arrow
             li
               a.menu_option(href="#about") About
+                .hidden-xs.arrow
             li
               a.menu_option(href="#contact") Contact
+                .hidden-xs.arrow
             li
               a.menu_option(href="images/JT_Townsend_Sept 2016.pdf") Resume
-    //- .nav-bar
-    //-   div
-    //-     .brand#name
-    //-       #ribbon
-    //-         #ribbon-body
-    //-           span JT Townsend
-    //-   #menu
-    //-     ul
-    //-       li
-    //-         a(href="#home")
-    //-           .menu_option#menu_home Home
-    //-             .arrow
-    //-       li
-    //-         a(href="#portfolio")
-    //-           .menu_option#menu_portfolio Portfolio
-    //-             .arrow
-    //-       li
-    //-         a(href="#about")
-    //-           .menu_option#menu_about About
-    //-             .arrow
-    //-       li
-    //-         a(href="#contact")
-    //-           .menu_option#menu_contact Contact
-    //-             .arrow
+                .hidden-xs.arrow
     .container-fluid
       .row
         .col-xs-12.col-md-12.main_greet#greet
@@ -70,8 +50,8 @@ html
                 .background-arrow
       .row
         .col-xs-12#portfolio
-          .row.section-title
-            .col-xs-12.text-center Portfolio
+          .row
+            .col-xs-12.text-center.section-title Portfolio
           .row.selection
             .col-xs-12.project#project1
               .row
@@ -92,11 +72,14 @@ html
                           li Mongoose/MongoDB
                           li Express.js
                           li Node.js
+                .col-xs-12.hidden-sm.hidden-md.hidden-lg.links-for-mobile
+                  .col-xs-12.text-center
+                    a(href='/coffeeSite') Live Demo
                 .col-xs-12.col-sm-4.col-sm-offset-1.details
                   .row
                     .col-xs-12.code-snippet-wrapper
                       .row
-                        .col-xs-12.code-snippet
+                        .col-xs-12.col-sm-10.col-sm-offset-1.code-snippet
                   .row.challenges-wrapper
                     .col-xs-12.challenges
                       h3 DC Roasters Challenges
@@ -125,11 +108,14 @@ html
                           li jQuery
                           li Leaflet.js
                           li Mapbox.js
+                .col-xs-12.hidden-sm.hidden-md.hidden-lg.links-for-mobile
+                  .col-xs-12.text-center
+                    a(href='/zombiez') Live Demo
                 .col-xs-12.col-sm-4.col-sm-offset-1.details
                   .row
                     .col-xs-12.code-snippet-wrapper
                       .row
-                        .col-xs-12.code-snippet
+                        .col-xs-12.col-sm-10.col-sm-offset-1.code-snippet
                     .row.challenges-wrapper
                       .col-xs-12.challenges
                         .row
@@ -162,11 +148,14 @@ html
                           li jQuery
                           li Angular/Angular Routes
                           li Twitter API
+                .col-xs-12.hidden-sm.hidden-md.hidden-lg.links-for-mobile
+                  .col-xs-12.text-center
+                    a(href='/angularTweets') Live Demo
                 .col-xs-12.col-sm-4.col-sm-offset-1.details
                   .row
                     .col-xs-12.code-snippet-wrapper
                       .row
-                        .col-xs-12.code-snippet
+                        .col-xs-12.col-sm-10.col-sm-offset-1.code-snippet
                   .row.challenges-wrapper
                     .col-xs-12.challenges
                       h3.col-xs-12 Political Tweets Challenges
@@ -193,11 +182,14 @@ html
                           li Bootstrap/CSS
                           li Javascript
                           li jQuery
+                .col-xs-12.hidden-sm.hidden-md.hidden-lg.links-for-mobile
+                  .col-xs-12.text-center
+                    a(href='/blackjack') Live Demo
                 .col-xs-12.col-sm-4.col-sm-offset-1.details
                   .row
                     .col-xs-12.code-snippet-wrapper
                       .row
-                        .col-xs-12.code-snippet
+                        .col-xs-12.col-sm-10.col-sm-offset-1.code-snippet
                   .row.challenges-wrapper
                     .col-xs-12.challenges
                       h3 Blackjack Challenges
@@ -214,46 +206,49 @@ html
                 .background-arrow
       .row
         .col-xs-12#about
+          .row.section-title
+            .col-xs-12.text-center About
+          .row.selection
+            .col-xs-12.about_me
+              .row
+                .col-xs-12.title In addition to being a developer, I am a
+                  .row
+                    .col-xs-6.col-sm-4.icon 
+                      img(src="images/processor.png")#tech
+                      .text Video Game and Tech Lover
+                    .col-xs-6.col-sm-4.icon 
+                      img(src="images/book.png")#learn
+                      .text Constant & Hungry Learner
+                    .col-xs-6.col-sm-4.icon.hema 
+                      img(src="images/helmet.png")#hema
+                      .text Historical European Martial Arts Practicioner
+                    .col-xs-6.col-xs-offset-0.col-sm-4.col-sm-offset-4.icon
+                      img(src="images/sunglasses.png")#geek
+                      .text  Bit Geeky All Around
+                  .highlight_me I am always doing something different and fun. Be it playing a table-top games, swinging swords with my buddies, DIY projects, or backpacking
           .row
-            .col-xs-12.section-title
-              .col-xs-12.text-center About
+            a.col-sm-12.hidden-xs(href="#contact")
+              .next-section-arrow#arrow-about
+                .background-arrow
+      .row
+        .col-xs-12#contact
+          .section-title
+            .contact Contact
             .selection
-              .about_me 
-                .title In addition to being a developer, I am a
-                .icon 
-                  img(src="images/processor.png")#tech
-                  .text Video Game and Tech Lover
-                .icon 
-                  img(src="images/book.png")#learn
-                  .text Constant & Hungry Learner
-                .icon.hema 
-                  img(src="images/helmet.png")#hema
-                  .text Historical European Martial Arts Practicioner
-                .icon
-                  img(src="images/sunglasses.png")#geek
-                  .text  Bit Geeky All Around
-              .highlight_me I am always doing something different and fun. Be it playing a table-top games, swinging swords with my buddies, DIY projects, or backpacking
-          a(href="#contact")
-            .next-section-arrow#arrow-about
-              .background-arrow
-    #contact
-      .section-title
-        .contact Contact
-        .selection
-          .photo(src-"../images/headshot_1.jpg")
-          .contact Have a question? Want to get in touch?
-          ul
-            li
-              a(href="http://www.twitter.com/dev_jt")
-                i.fa.fa-twitter.fa-3
-            li
-              a(href="http://www.github.com/jttwnsnd") 
-                i.fa.fa-github.fa-3
-            li
-              a(href="https://www.linkedin.com/in/jt-townsend-52408074") 
-                i.fa.fa-linkedin.fa-3
-          div Send me a message:
-          div jt.a.townsend@gmail.com
+              .photo(src-"../images/headshot_1.jpg")
+              .contact Have a question? Want to get in touch?
+              ul
+                li
+                  a(href="http://www.twitter.com/dev_jt")
+                    i.fa.fa-twitter.fa-3
+                li
+                  a(href="http://www.github.com/jttwnsnd") 
+                    i.fa.fa-github.fa-3
+                li
+                  a(href="https://www.linkedin.com/in/jt-townsend-52408074") 
+                    i.fa.fa-linkedin.fa-3
+              .send-message Send me a message:
+              .email jt.a.townsend@gmail.com
           //- form(action-"mail.php", method="mail()")
           //-   .grouping
           //-     .input-group
@@ -269,6 +264,9 @@ html
           //-       label Message
           //-       textarea(name="body")
           //-       button.send-message(type="submit") Send Message
+    footer.jt-footer
+      .text-center
+        .foot-text JT Townsend | All Rights Reserved
 
     script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
