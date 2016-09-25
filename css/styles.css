@@ -147,8 +147,7 @@
   .main_greet a {
     width: 100%; }
     .main_greet a #greet_arrow {
-      animation: moving_arrows 1.5s ease-in-out infinite;
-      position: bottom;
+      animation: moving_arrows 1.5s ease infinite;
       margin: 0 48.5%;
       display: inline-block;
       position: relative;
@@ -307,6 +306,18 @@
     #project4 .details .challenges-wrapper .challenges {
       display: inline-block; }
 
+#arrow-portfolio {
+  animation: moving_arrows 1.5s ease infinite; }
+  #arrow-portfolio .background-arrow {
+    display: inline-block;
+    position: absolute;
+    border-top: 11px solid #424242;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    top: -20px;
+    right: -11px;
+    transition: all 1s ease-in-out; }
+
 @keyframes moving_arrows {
   0% {
     transform: translateY(0px);
@@ -457,19 +468,8 @@ body {
     height: auto;
     width: 100%;
     background-color: #424242; }
-    body #portfolio #arrow-portfolio {
-      animation: moving_arrows 1s ease-in-out infinite alternate; }
-      body #portfolio #arrow-portfolio .background-arrow {
-        display: inline-block;
-        position: absolute;
-        border-top: 11px solid #424242;
-        border-left: 11px solid transparent;
-        border-right: 11px solid transparent;
-        top: -20px;
-        right: -11px;
-        transition: all 1s ease-in-out; }
   body #about a #arrow-about {
-    animation: moving_arrows 1s ease-in-out infinite alternate;
+    animation: moving_arrows 1s ease infinite alternate;
     top: 0px;
     margin: 0 48.5%;
     display: inline-block;

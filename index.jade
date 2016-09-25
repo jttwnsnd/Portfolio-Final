@@ -128,7 +128,8 @@ html
                 .col-xs-12.col-sm-4.col-sm-offset-1.details
                   .row
                     .col-xs-12.code-snippet-wrapper
-                      .col-xs-12.code-snippet
+                      .row
+                        .col-xs-12.code-snippet
                     .row.challenges-wrapper
                       .col-xs-12.challenges
                         .row
@@ -144,28 +145,32 @@ html
                             |  for the option and gave consistency to the menu option by using
                             code addClass()
                             |  , preventing the inconsistency for the option.
-              .project#project3
-                .preview
-                  .project-overview
-                    .project-name Political Tweets
-                    a.project-links(href="/angularTweets") Live Demo
-                    a.project-links(href="https://github.com/jttwnsnd/agnular-tweets") Github Repository
-                    hr
-                    .languages
-                      ul
-                        li HTML
-                        li Bootstrap/Angular Materials/CSS
-                        li Javascript
-                        li jQuery
-                        li Angular/Angular Routes
-                        li Twitter API
-                .details
-                  .code-snippet-wrapper
-                    .code-snippet
-                  .challenges-wrapper
-                    .challenges
-                      h3 Political Tweets Challenges
-                      .text 
+            .col-xs-12.project#project3
+              .row
+                .col-xs-12.col-sm-7.preview
+                  .row
+                    .col-xs-12.col-sm-7.project-overview
+                      .project-name Political Tweets
+                      a.project-links(href="/angularTweets") Live Demo
+                      a.project-links(href="https://github.com/jttwnsnd/agnular-tweets") Github Repository
+                      hr
+                      .languages
+                        ul
+                          li HTML
+                          li Bootstrap/Angular Materials/CSS
+                          li Javascript
+                          li jQuery
+                          li Angular/Angular Routes
+                          li Twitter API
+                .col-xs-12.col-sm-4.col-sm-offset-1.details
+                  .row
+                    .col-xs-12.code-snippet-wrapper
+                      .row
+                        .col-xs-12.code-snippet
+                  .row.challenges-wrapper
+                    .col-xs-12.challenges
+                      h3.col-xs-12 Political Tweets Challenges
+                      .col-xs-12.text 
                         | I incorporate a recent search list history. During implementation I experienced 
                         | an issue with keeping the list up to date. I resolved the issue by using an array 
                         | to store the search queries. The array held up to 5 entries and I used Javascript array methods 
@@ -173,24 +178,28 @@ html
                         |  to place new information at the top and 
                         code array.splice()
                         |  to keep the list at 5 entries.
-              .project#project4
-                .preview
-                  .project-overview
-                    .project-name Blackjack
-                    a.project-links(href="/blackjack") Live Demo
-                    a.project-links(href="https://github.com/jttwnsnd/blackjack") Github Repository
-                    hr
-                    .languages
-                      ul
-                        li HTML
-                        li Bootstrap/CSS
-                        li Javascript
-                        li jQuery
-                .details
-                  .code-snippet-wrapper
-                    .code-snippet
-                  .challenges-wrapper
-                    .challenges
+            .col-xs-12.project#project4
+              .row
+                .col-xs-12.col-sm-7.preview
+                  .row
+                    .col-xs-12.col-sm-7.project-overview
+                      .project-name Blackjack
+                      a.project-links(href="/blackjack") Live Demo
+                      a.project-links(href="https://github.com/jttwnsnd/blackjack") Github Repository
+                      hr
+                      .languages
+                        ul
+                          li HTML
+                          li Bootstrap/CSS
+                          li Javascript
+                          li jQuery
+                .col-xs-12.col-sm-4.col-sm-offset-1.details
+                  .row
+                    .col-xs-12.code-snippet-wrapper
+                      .row
+                        .col-xs-12.code-snippet
+                  .row.challenges-wrapper
+                    .col-xs-12.challenges
                       h3 Blackjack Challenges
                       .text 
                         | Keeping track of card values is easy until you get to anything Jacks and above. Aces were 
@@ -199,31 +208,34 @@ html
                         code if((cardValue == 11) && (total > 21))
                         |  as my conditional to check whether Ace needs to be 1 or 11, creating a dynamic and realistic 
                         | feel to the game.
-      a(href="#about")
-        .next-section-arrow#arrow-portfolio
-          .background-arrow
-    #about
-      .section-title
-        span About
-        .selection
-          .about_me 
-            .title In addition to being a developer, I am a
-            .icon 
-              img(src="images/processor.png")#tech
-              .text Video Game and Tech Lover
-            .icon 
-              img(src="images/book.png")#learn
-              .text Constant & Hungry Learner
-            .icon.hema 
-              img(src="images/helmet.png")#hema
-              .text Historical European Martial Arts Practicioner
-            .icon
-              img(src="images/sunglasses.png")#geek
-              .text  Bit Geeky All Around
-          .highlight_me I am always doing something different and fun. Be it playing a table-top games, swinging swords with my buddies, DIY projects, or backpacking
-      a(href="#contact")
-        .next-section-arrow#arrow-about
-          .background-arrow
+          .row
+            a.col-sm-12.hidden-xs(href="#about")
+              .next-section-arrow#arrow-portfolio
+                .background-arrow
+      .row
+        .col-xs-12#about
+          .row
+            .col-xs-12.section-title
+              .col-xs-12.text-center About
+            .selection
+              .about_me 
+                .title In addition to being a developer, I am a
+                .icon 
+                  img(src="images/processor.png")#tech
+                  .text Video Game and Tech Lover
+                .icon 
+                  img(src="images/book.png")#learn
+                  .text Constant & Hungry Learner
+                .icon.hema 
+                  img(src="images/helmet.png")#hema
+                  .text Historical European Martial Arts Practicioner
+                .icon
+                  img(src="images/sunglasses.png")#geek
+                  .text  Bit Geeky All Around
+              .highlight_me I am always doing something different and fun. Be it playing a table-top games, swinging swords with my buddies, DIY projects, or backpacking
+          a(href="#contact")
+            .next-section-arrow#arrow-about
+              .background-arrow
     #contact
       .section-title
         .contact Contact
