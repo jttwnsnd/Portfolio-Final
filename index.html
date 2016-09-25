@@ -2,185 +2,188 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JT Townsend</title>
     <script src="https://use.fontawesome.com/60d310a586.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Shade">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body id="home">
-    <div class="nav-bar">
-      <div>
-        <div id="name" class="brand">
-          <div id="ribbon">
-            <div id="ribbon-body"><span>JT Townsend</span></div>
-          </div>
+    <nav class="navbar jt-nav navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#jt-nav-collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a id="name" href="#home" class="navbar-brand brand">JT Townsend</a>
+        </div>
+        <div id="jt-nav-collapse" class="collapse navbar-collapse">
+          <ul id="menu" class="nav navbar-nav navbar-right">
+            <li class="menu_option"><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about" class="menu_option">About</a></li>
+            <li><a href="#contact" class="menu_option">Contact</a></li>
+            <li><a href="images/JT_Townsend_Sept 2016.pdf" class="menu_option">Resume</a></li>
+          </ul>
         </div>
       </div>
-      <div id="menu">
-        <ul>
-          <li><a href="#home">
-              <div id="menu_home" class="menu_option">Home
-                <div class="arrow"></div>
-              </div></a></li>
-          <li><a href="#portfolio">
-              <div id="menu_portfolio" class="menu_option">Portfolio
-                <div class="arrow"></div>
-              </div></a></li>
-          <li><a href="#about">
-              <div id="menu_about" class="menu_option">About
-                <div class="arrow"></div>
-              </div></a></li>
-          <li><a href="#contact">
-              <div id="menu_contact" class="menu_option">Contact
-                <div class="arrow"></div>
-              </div></a></li>
-        </ul>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="greet" class="col-xs-12 col-md-12 main_greet">
+          <div class="row">
+            <div class="col-xs-12 text-center greet_1"><span>Hello, I'm JT</span>
+              <div class="greet_2">A Web Developer and Interactive Artist</div>
+            </div>
+          </div>
+          <div class="row"><a href="#portfolio" class="col-sm-12 hidden-xs">
+              <div id="greet_arrow" class="next-section-arrow">
+                <div class="background-arrow"></div>
+              </div></a></div>
+        </div>
       </div>
-    </div>
-    <div id="greet" class="main_greet">
-      <div class="greet_1"><span>Hello, I'm JT</span>
-        <div class="greet_2">A Web Developer and Interactive Artist</div>
-      </div><a href="#portfolio">
-        <div id="greet_arrow" class="next-section-arrow">
-          <div class="background-arrow"></div>
-        </div></a>
-    </div>
-    <div id="portfolio">
-      <div class="section-title"><span>Portfolio</span>
-        <div class="selection">
-          <div id="project1" class="project">
-            <div class="preview">
-              <div class="project-overview"> 
-                <div class="project-name">DC Roasters</div><a href="/coffeeSite" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/NodeEcommerce" class="project-links">Github Repository</a>
-                <hr>
-                <div class="languages">
-                  <ul>
-                    <li>Jade/HTML</li>
-                    <li>Sass/Bootstrap/CSS</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                    <li>Angular</li>
-                    <li>Mongoose/MongoDB</li>
-                    <li>Express.js</li>
-                    <li>Node.js</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="details">
-              <div class="code-snippet-wrapper">
-                <div class="code-snippet"></div>
-              </div>
-              <div class="challenges-wrapper">
-                <div class="challenges">
-                  <h3>DC Roasters Challenges</h3>
-                  <div class="text">
-                     
-                    Getting and transferring all the information I need to display across my 
-                    views is a big challenge in this project. My solution is to set the entire 
-                    data to an Angular object <code>$scope.userInfo</code> inside of my <code>function checkFunction()</code> that is invoked every time the view is changed.
+      <div class="row">
+        <div id="portfolio" class="col-xs-12">
+          <div class="row section-title">
+            <div class="col-xs-12 text-center">Portfolio
+              <div class="row selection">
+                <div id="project1" class="col-xs-12 project">
+                  <div class="col-xs-12 col-sm-7 preview">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-7 project-overview"> 
+                        <div class="project-name">DC Roasters</div><a href="/coffeeSite" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/NodeEcommerce" class="project-links">Github Repository</a>
+                        <hr>
+                        <div class="languages">
+                          <ul>
+                            <li>Jade/HTML</li>
+                            <li>Sass/Bootstrap/CSS</li>
+                            <li>Javascript</li>
+                            <li>jQuery</li>
+                            <li>Angular</li>
+                            <li>Mongoose/MongoDB</li>
+                            <li>Express.js</li>
+                            <li>Node.js</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-sm-offset-1 details">
+                    <div class="row">
+                      <div class="col-xs-12 code-snippet-wrapper">
+                        <div class="col-xs-12 code-snippet"></div>
+                      </div>
+                    </div>
+                    <div class="row challenges-wrapper">
+                      <div class="col-xs-12 challenges">
+                        <h3>DC Roasters Challenges</h3>
+                        <div class="text">
+                           
+                          Getting and transferring all the information I need to display across my 
+                          views is a big challenge in this project. My solution is to set the entire 
+                          data to an Angular object <code>$scope.userInfo</code> inside of my <code>function checkFunction()</code> that is invoked every time the view is changed.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div id="project2" class="project">
-            <div class="preview">
-              <div class="project-overview">
-                <div class="project-name">Zombiez</div><a href="/zombiez" class="project-links">Live Demo</a><a href="https://github.com/paigen11/frontend-project" class="project-links">Github Repository</a>
-                <hr>
-                <div class="languages">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                    <li>Leaflet.js</li>
-                    <li>Mapbox.js</li>
-                  </ul>
+              <div id="project2" class="project">
+                <div class="preview">
+                  <div class="project-overview">
+                    <div class="project-name">Zombiez</div><a href="/zombiez" class="project-links">Live Demo</a><a href="https://github.com/paigen11/frontend-project" class="project-links">Github Repository</a>
+                    <hr>
+                    <div class="languages">
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>jQuery</li>
+                        <li>Leaflet.js</li>
+                        <li>Mapbox.js</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="details">
-              <div class="code-snippet-wrapper">
-                <div class="code-snippet"></div>
-              </div>
-              <div class="challenges-wrapper">
-                <div class="challenges">
-                  <h3>Zombiez Challenges</h3>
-                  <div class="text">
-                     
-                    One challenge that I faced was a menu option failing with jQuery’s abilities to 
-                    add CSS classes through <code>toggleClass()</code> and <code>addClass()</code>. After testing each option meticulously, I noticed the issue hiding in the<code>setTimeout()</code> for the option and gave consistency to the menu option by using<code>addClass()</code> , preventing the inconsistency for the option.
+                <div class="details">
+                  <div class="code-snippet-wrapper">
+                    <div class="code-snippet"></div>
+                  </div>
+                  <div class="challenges-wrapper">
+                    <div class="challenges">
+                      <h3>Zombiez Challenges</h3>
+                      <div class="text">
+                         
+                        One challenge that I faced was a menu option failing with jQuery’s abilities to 
+                        add CSS classes through <code>toggleClass()</code> and <code>addClass()</code>. After testing each option meticulously, I noticed the issue hiding in the<code>setTimeout()</code> for the option and gave consistency to the menu option by using<code>addClass()</code> , preventing the inconsistency for the option.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div id="project3" class="project">
-            <div class="preview">
-              <div class="project-overview">
-                <div class="project-name">Political Tweets</div><a href="/angularTweets" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/agnular-tweets" class="project-links">Github Repository</a>
-                <hr>
-                <div class="languages">
-                  <ul>
-                    <li>HTML</li>
-                    <li>Bootstrap/Angular Materials/CSS</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                    <li>Angular/Angular Routes</li>
-                    <li>Twitter API</li>
-                  </ul>
+              <div id="project3" class="project">
+                <div class="preview">
+                  <div class="project-overview">
+                    <div class="project-name">Political Tweets</div><a href="/angularTweets" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/agnular-tweets" class="project-links">Github Repository</a>
+                    <hr>
+                    <div class="languages">
+                      <ul>
+                        <li>HTML</li>
+                        <li>Bootstrap/Angular Materials/CSS</li>
+                        <li>Javascript</li>
+                        <li>jQuery</li>
+                        <li>Angular/Angular Routes</li>
+                        <li>Twitter API</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="details">
-              <div class="code-snippet-wrapper">
-                <div class="code-snippet"></div>
-              </div>
-              <div class="challenges-wrapper">
-                <div class="challenges">
-                  <h3>Political Tweets Challenges</h3>
-                  <div class="text">
-                     
-                    I incorporate a recent search list history. During implementation I experienced 
-                    an issue with keeping the list up to date. I resolved the issue by using an array 
-                    to store the search queries. The array held up to 5 entries and I used Javascript array methods <code>array.unshift()</code> to place new information at the top and <code>array.splice()</code> to keep the list at 5 entries.
+                <div class="details">
+                  <div class="code-snippet-wrapper">
+                    <div class="code-snippet"></div>
+                  </div>
+                  <div class="challenges-wrapper">
+                    <div class="challenges">
+                      <h3>Political Tweets Challenges</h3>
+                      <div class="text">
+                         
+                        I incorporate a recent search list history. During implementation I experienced 
+                        an issue with keeping the list up to date. I resolved the issue by using an array 
+                        to store the search queries. The array held up to 5 entries and I used Javascript array methods <code>array.unshift()</code> to place new information at the top and <code>array.splice()</code> to keep the list at 5 entries.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div id="project4" class="project">
-            <div class="preview">
-              <div class="project-overview">
-                <div class="project-name">Blackjack</div><a href="/blackjack" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/blackjack" class="project-links">Github Repository</a>
-                <hr>
-                <div class="languages">
-                  <ul>
-                    <li>HTML</li>
-                    <li>Bootstrap/CSS</li>
-                    <li>Javascript</li>
-                    <li>jQuery</li>
-                  </ul>
+              <div id="project4" class="project">
+                <div class="preview">
+                  <div class="project-overview">
+                    <div class="project-name">Blackjack</div><a href="/blackjack" class="project-links">Live Demo</a><a href="https://github.com/jttwnsnd/blackjack" class="project-links">Github Repository</a>
+                    <hr>
+                    <div class="languages">
+                      <ul>
+                        <li>HTML</li>
+                        <li>Bootstrap/CSS</li>
+                        <li>Javascript</li>
+                        <li>jQuery</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="details">
-              <div class="code-snippet-wrapper">
-                <div class="code-snippet"></div>
-              </div>
-              <div class="challenges-wrapper">
-                <div class="challenges">
-                  <h3>Blackjack Challenges</h3>
-                  <div class="text">
-                     
-                    Keeping track of card values is easy until you get to anything Jacks and above. Aces were 
-                    exceptionally tricky. To help keep track, giving conditionals to control the value 
-                    is what I found to keep the values in check. With Aces being the special case, I used <code>if((cardValue == 11) && (total > 21))</code> as my conditional to check whether Ace needs to be 1 or 11, creating a dynamic and realistic 
-                    feel to the game.
+                <div class="details">
+                  <div class="code-snippet-wrapper">
+                    <div class="code-snippet"></div>
+                  </div>
+                  <div class="challenges-wrapper">
+                    <div class="challenges">
+                      <h3>Blackjack Challenges</h3>
+                      <div class="text">
+                         
+                        Keeping track of card values is easy until you get to anything Jacks and above. Aces were 
+                        exceptionally tricky. To help keep track, giving conditionals to control the value 
+                        is what I found to keep the values in check. With Aces being the special case, I used <code>if((cardValue == 11) && (total > 21))</code> as my conditional to check whether Ace needs to be 1 or 11, creating a dynamic and realistic 
+                        feel to the game.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -234,6 +237,7 @@
       </div>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>

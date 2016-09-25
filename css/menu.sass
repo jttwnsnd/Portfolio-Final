@@ -1,24 +1,29 @@
 //arrow and arrow animation for my menu
 @import 'variables'
 
-.arrow
-  background-color: transparent
-  position: absolute
-  top: 58px
-  left: 40%
-  border-top: 10px solid $dark-green
-  border-left: 10px solid transparent
-  border-right:  10px solid transparent
-  border-bottom: 10px solid transparent
-  transform:  translateY(-10px)
-  transition: all .7s ease
-.arrow_drop
-  border-top: 10px solid $light-green
-  transform:  translateY(0em)
+@media screen and (min-width: $breakpoint-desktop)
+  .arrow
+    background-color: transparent
+    position: absolute
+    top: 58px
+    left: 40%
+    border-top: 10px solid $dark-green
+    border-left: 10px solid transparent
+    border-right:  10px solid transparent
+    border-bottom: 10px solid transparent
+    transform:  translateY(-10px)
+    transition: all .7s ease
+  .arrow_drop
+    border-top: 10px solid $light-green
+    transform:  translateY(0px)
+@media screen and (min-width: $breakpoint-tablet)
+  .arrow
+    margin: 0
+  .arrow_drop
+    margin: 0
 
 //here is my nav styling
-
-.nav-bar
+.jt-nav
   position: fixed
   top: 0
   left: 0
@@ -26,6 +31,19 @@
   height: auto
   width: 100%
   z-index: 10
+  color: $light-green
+.navbar-toggle
+  background-color: $dark-green
+  transition: all .7s ease
+  &:hover
+    background-color: $light-green
+    .icon-bar
+      background-color: $accent-blue
+
+.icon-bar
+  background-color: $light-green
+  transition: all .7s ease
+
   .brand
     position: absolute
     top: 0
@@ -69,21 +87,15 @@
       border-width: 15px 91px
       border-style:  solid
       border-color: $accent-blue $accent-blue transparent $accent-blue
-  #menu
-    float: right
-    ul
+  #jt-nav-collapse
+    #menu
       margin:  0
-      li
-        margin: 0
-        padding: 0
-        display: inline-block
-        list-style: none
-        .menu_option
-          color:  $light-green
-          margin: 0 -2px
-          padding: 20px 30px
-          transition: all .7s ease
-          position:  relative
-          &:hover
-            background-color: $light-green
-            color: $accent-blue
+      .menu_option
+        color:  $light-green
+        margin: 0 -2px
+        padding: 20px 30px
+        transition: all .7s ease
+        position:  relative
+        &:hover
+          background-color: $light-green
+          color: $accent-blue

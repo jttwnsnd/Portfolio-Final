@@ -1,7 +1,4 @@
 $(document).ready(function(){
-	$('.menu_option').hover(function(){
-		$(this).children().toggleClass('arrow_drop');
-	});
 	$('a').on('click',function(event){
 		if(this.hash !== ''){
 			event.preventDefault();

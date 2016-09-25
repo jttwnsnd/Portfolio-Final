@@ -2,166 +2,197 @@ doctype html
 html
   head
     meta(charset='utf-8')
-    meta(name='viewport', content="width=device-width, initial-scale=1")
+    meta(name='viewport', content="width=device-width, initial-scale=1.0")
     title JT Townsend
     script(src="https://use.fontawesome.com/60d310a586.js")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css", integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp", crossorigin="anonymous")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bungee+Shade" )
     link(rel="stylesheet", href="css/styles.css")
   body#home
-    .nav-bar
-      div
-        .brand#name
-          #ribbon
-            #ribbon-body
-              span JT Townsend
-      #menu
-        ul
-          li
-            a(href="#home")
-              .menu_option#menu_home Home
-                .arrow
-          li
-            a(href="#portfolio")
-              .menu_option#menu_portfolio Portfolio
-                .arrow
-          li
-            a(href="#about")
-              .menu_option#menu_about About
-                .arrow
-          li
-            a(href="#contact")
-              .menu_option#menu_contact Contact
-                .arrow
-    .main_greet#greet
-      .greet_1
-        span Hello, I'm JT
-        .greet_2 A Web Developer and Interactive Artist
-      a(href="#portfolio")
-        .next-section-arrow#greet_arrow
-          .background-arrow
-    #portfolio
-      .section-title
-        span Portfolio
-        .selection
-          .project#project1
-            .preview
-              .project-overview 
-                .project-name DC Roasters
-                a.project-links(href="/coffeeSite") Live Demo
-                a.project-links(href="https://github.com/jttwnsnd/NodeEcommerce") Github Repository
-                hr
-                .languages
-                  ul
-                    li Jade/HTML
-                    li Sass/Bootstrap/CSS
-                    li Javascript
-                    li jQuery
-                    li Angular
-                    li Mongoose/MongoDB
-                    li Express.js
-                    li Node.js
-            .details
-              .code-snippet-wrapper
-                .code-snippet
-              .challenges-wrapper
-                .challenges
-                  h3 DC Roasters Challenges
-                  .text 
-                    | Getting and transferring all the information I need to display across my 
-                    | views is a big challenge in this project. My solution is to set the entire 
-                    | data to an Angular object 
-                    code $scope.userInfo
-                    |  inside of my 
-                    code function checkFunction()
-                    |  that is invoked every time the view is changed.
-          .project#project2
-            .preview
-              .project-overview
-                .project-name Zombiez
-                a.project-links(href="/zombiez") Live Demo
-                a.project-links(href="https://github.com/paigen11/frontend-project") Github Repository
-                hr
-                .languages
-                  ul
-                    li HTML
-                    li CSS
-                    li Javascript
-                    li jQuery
-                    li Leaflet.js
-                    li Mapbox.js
-            .details
-              .code-snippet-wrapper
-                .code-snippet
-              .challenges-wrapper
-                .challenges
-                  h3 Zombiez Challenges
-                  .text 
-                    | One challenge that I faced was a menu option failing with jQuery’s abilities to 
-                    | add CSS classes through 
-                    code toggleClass()
-                    |  and 
-                    code addClass()
-                    | . After testing each option meticulously, I noticed the issue hiding in the
-                    code setTimeout()
-                    |  for the option and gave consistency to the menu option by using
-                    code addClass()
-                    |  , preventing the inconsistency for the option.
-          .project#project3
-            .preview
-              .project-overview
-                .project-name Political Tweets
-                a.project-links(href="/angularTweets") Live Demo
-                a.project-links(href="https://github.com/jttwnsnd/agnular-tweets") Github Repository
-                hr
-                .languages
-                  ul
-                    li HTML
-                    li Bootstrap/Angular Materials/CSS
-                    li Javascript
-                    li jQuery
-                    li Angular/Angular Routes
-                    li Twitter API
-            .details
-              .code-snippet-wrapper
-                .code-snippet
-              .challenges-wrapper
-                .challenges
-                  h3 Political Tweets Challenges
-                  .text 
-                    | I incorporate a recent search list history. During implementation I experienced 
-                    | an issue with keeping the list up to date. I resolved the issue by using an array 
-                    | to store the search queries. The array held up to 5 entries and I used Javascript array methods 
-                    code array.unshift()
-                    |  to place new information at the top and 
-                    code array.splice()
-                    |  to keep the list at 5 entries.
-          .project#project4
-            .preview
-              .project-overview
-                .project-name Blackjack
-                a.project-links(href="/blackjack") Live Demo
-                a.project-links(href="https://github.com/jttwnsnd/blackjack") Github Repository
-                hr
-                .languages
-                  ul
-                    li HTML
-                    li Bootstrap/CSS
-                    li Javascript
-                    li jQuery
-            .details
-              .code-snippet-wrapper
-                .code-snippet
-              .challenges-wrapper
-                .challenges
-                  h3 Blackjack Challenges
-                  .text 
-                    | Keeping track of card values is easy until you get to anything Jacks and above. Aces were 
-                    | exceptionally tricky. To help keep track, giving conditionals to control the value 
-                    | is what I found to keep the values in check. With Aces being the special case, I used 
-                    code if((cardValue == 11) && (total > 21))
-                    |  as my conditional to check whether Ace needs to be 1 or 11, creating a dynamic and realistic 
-                    | feel to the game.
+    nav.navbar.jt-nav.navbar-fixed-top
+      .container-fluid
+        //- Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#jt-nav-collapse", aria-expanded="false")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.brand#name(href="#home") JT Townsend
+
+        //- Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse#jt-nav-collapse
+          ul.nav.navbar-nav.navbar-right#menu
+            li.menu_option
+              a(href="#portfolio") Portfolio
+            li
+              a.menu_option(href="#about") About
+            li
+              a.menu_option(href="#contact") Contact
+            li
+              a.menu_option(href="images/JT_Townsend_Sept 2016.pdf") Resume
+    //- .nav-bar
+    //-   div
+    //-     .brand#name
+    //-       #ribbon
+    //-         #ribbon-body
+    //-           span JT Townsend
+    //-   #menu
+    //-     ul
+    //-       li
+    //-         a(href="#home")
+    //-           .menu_option#menu_home Home
+    //-             .arrow
+    //-       li
+    //-         a(href="#portfolio")
+    //-           .menu_option#menu_portfolio Portfolio
+    //-             .arrow
+    //-       li
+    //-         a(href="#about")
+    //-           .menu_option#menu_about About
+    //-             .arrow
+    //-       li
+    //-         a(href="#contact")
+    //-           .menu_option#menu_contact Contact
+    //-             .arrow
+    .container-fluid
+      .row
+        .col-xs-12.col-md-12.main_greet#greet
+          .row
+            .col-xs-12.text-center.greet_1
+              span Hello, I'm JT
+              .greet_2 A Web Developer and Interactive Artist
+          .row
+            a.col-sm-12.hidden-xs(href="#portfolio")
+              .next-section-arrow#greet_arrow
+                .background-arrow
+      .row
+        .col-xs-12#portfolio
+          .row.section-title
+            .col-xs-12.text-center Portfolio
+              .row.selection
+                .col-xs-12.project#project1
+                    .col-xs-12.col-sm-7.preview
+                      .row
+                        .col-xs-12.col-sm-7.project-overview 
+                          .project-name DC Roasters
+                          a.project-links(href="/coffeeSite") Live Demo
+                          a.project-links(href="https://github.com/jttwnsnd/NodeEcommerce") Github Repository
+                          hr
+                          .languages
+                            ul
+                              li Jade/HTML
+                              li Sass/Bootstrap/CSS
+                              li Javascript
+                              li jQuery
+                              li Angular
+                              li Mongoose/MongoDB
+                              li Express.js
+                              li Node.js
+                    .col-xs-12.col-sm-4.col-sm-offset-1.details
+                      .row
+                        .col-xs-12.code-snippet-wrapper
+                          .col-xs-12.code-snippet
+                      .row.challenges-wrapper
+                        .col-xs-12.challenges
+                          h3 DC Roasters Challenges
+                          .text 
+                            | Getting and transferring all the information I need to display across my 
+                            | views is a big challenge in this project. My solution is to set the entire 
+                            | data to an Angular object 
+                            code $scope.userInfo
+                            |  inside of my 
+                            code function checkFunction()
+                            |  that is invoked every time the view is changed.
+              .project#project2
+                .preview
+                  .project-overview
+                    .project-name Zombiez
+                    a.project-links(href="/zombiez") Live Demo
+                    a.project-links(href="https://github.com/paigen11/frontend-project") Github Repository
+                    hr
+                    .languages
+                      ul
+                        li HTML
+                        li CSS
+                        li Javascript
+                        li jQuery
+                        li Leaflet.js
+                        li Mapbox.js
+                .details
+                  .code-snippet-wrapper
+                    .code-snippet
+                  .challenges-wrapper
+                    .challenges
+                      h3 Zombiez Challenges
+                      .text 
+                        | One challenge that I faced was a menu option failing with jQuery’s abilities to 
+                        | add CSS classes through 
+                        code toggleClass()
+                        |  and 
+                        code addClass()
+                        | . After testing each option meticulously, I noticed the issue hiding in the
+                        code setTimeout()
+                        |  for the option and gave consistency to the menu option by using
+                        code addClass()
+                        |  , preventing the inconsistency for the option.
+              .project#project3
+                .preview
+                  .project-overview
+                    .project-name Political Tweets
+                    a.project-links(href="/angularTweets") Live Demo
+                    a.project-links(href="https://github.com/jttwnsnd/agnular-tweets") Github Repository
+                    hr
+                    .languages
+                      ul
+                        li HTML
+                        li Bootstrap/Angular Materials/CSS
+                        li Javascript
+                        li jQuery
+                        li Angular/Angular Routes
+                        li Twitter API
+                .details
+                  .code-snippet-wrapper
+                    .code-snippet
+                  .challenges-wrapper
+                    .challenges
+                      h3 Political Tweets Challenges
+                      .text 
+                        | I incorporate a recent search list history. During implementation I experienced 
+                        | an issue with keeping the list up to date. I resolved the issue by using an array 
+                        | to store the search queries. The array held up to 5 entries and I used Javascript array methods 
+                        code array.unshift()
+                        |  to place new information at the top and 
+                        code array.splice()
+                        |  to keep the list at 5 entries.
+              .project#project4
+                .preview
+                  .project-overview
+                    .project-name Blackjack
+                    a.project-links(href="/blackjack") Live Demo
+                    a.project-links(href="https://github.com/jttwnsnd/blackjack") Github Repository
+                    hr
+                    .languages
+                      ul
+                        li HTML
+                        li Bootstrap/CSS
+                        li Javascript
+                        li jQuery
+                .details
+                  .code-snippet-wrapper
+                    .code-snippet
+                  .challenges-wrapper
+                    .challenges
+                      h3 Blackjack Challenges
+                      .text 
+                        | Keeping track of card values is easy until you get to anything Jacks and above. Aces were 
+                        | exceptionally tricky. To help keep track, giving conditionals to control the value 
+                        | is what I found to keep the values in check. With Aces being the special case, I used 
+                        code if((cardValue == 11) && (total > 21))
+                        |  as my conditional to check whether Ace needs to be 1 or 11, creating a dynamic and realistic 
+                        | feel to the game.
       a(href="#about")
         .next-section-arrow#arrow-portfolio
           .background-arrow
@@ -222,4 +253,5 @@ html
           //-       button.send-message(type="submit") Send Message
 
     script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
     script(type="text/javascript", src="js/scripts.js")
