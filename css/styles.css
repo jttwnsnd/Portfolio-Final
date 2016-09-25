@@ -254,7 +254,8 @@
     .details .challenges-wrapper .challenges {
       padding: 0px 20px;
       box-sizing: border-box;
-      display: inline-block; }
+      display: inline-block;
+      color: #E0E0E0; }
 
 #project1 .preview {
   background-image: url("../images/dc_roast_screenshot.png");
