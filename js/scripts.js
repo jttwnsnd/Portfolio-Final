@@ -13,7 +13,7 @@ $(document).ready(function(){
 	});
 	//project hover effect
 	$('.project-overview').hover(function(){
-		$(this).css({'opacity': .8});
+		$(this).css({'opacity': .9});
 	}, function(){
 		$(this).css({'opacity': 0});
 	});
