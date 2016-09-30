@@ -249,10 +249,12 @@
   .details .challenges-wrapper {
     display: inline-block; }
     .details .challenges-wrapper .challenges {
+      max-height: 250px;
       padding: 0px 20px;
       box-sizing: border-box;
       display: inline-block;
-      color: #E0E0E0; }
+      color: #E0E0E0;
+      overflow: scroll; }
 
 #project1 .details .code-snippet-wrapper .code-snippet {
   transition: all 5s ease-in-out;
@@ -291,8 +293,6 @@
   display: inline-block; }
   #project3 .details .challenges-wrapper .challenges {
     display: inline-block; }
-    #project3 .details .challenges-wrapper .challenges p {
-      font-size: 14px; }
 
 #project4 .preview img {
   max-width: 100%;
@@ -497,6 +497,9 @@ a {
 
 a {
   text-decoration: none; }
+
+.arrow-buffer {
+  height: 20px; }
 
 body {
   background-color: #FFFCFD;
