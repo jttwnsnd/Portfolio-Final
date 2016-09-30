@@ -195,6 +195,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/blackjack.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.88603e+06,
+		"inputAbbreviatedPath": "\/images\/blackjack.png",
+		"outputAbbreviatedPath": "\/images\/blackjack.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/blackjack_screenshot.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -246,6 +257,17 @@
 		"initialSize": 78798,
 		"inputAbbreviatedPath": "\/images\/dc_roaster_snippet.png",
 		"outputAbbreviatedPath": "\/images\/dc_roaster_snippet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/DC_Roasters.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.68579e+06,
+		"inputAbbreviatedPath": "\/images\/DC_Roasters.png",
+		"outputAbbreviatedPath": "\/images\/DC_Roasters.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -327,6 +349,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Political_Tweets.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179846,
+		"inputAbbreviatedPath": "\/images\/Political_Tweets.png",
+		"outputAbbreviatedPath": "\/images\/Political_Tweets.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/processor.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -345,6 +378,17 @@
 		"initialSize": 1305,
 		"inputAbbreviatedPath": "\/images\/sunglasses.png",
 		"outputAbbreviatedPath": "\/images\/sunglasses.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/zombiez.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.17718e+06,
+		"inputAbbreviatedPath": "\/images\/zombiez.png",
+		"outputAbbreviatedPath": "\/images\/zombiez.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

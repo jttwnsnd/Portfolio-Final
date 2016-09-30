@@ -7,41 +7,19 @@
 
 .project
   padding: 60px 20px 0px 20px
+  box-sizing: border-box
   .preview
+    box-sizing: border-box
     display: inline-block
-    height: 500px
+    max-height: 500px
     transition: all .7s ease-in-out
     @media screen and (min-width: $breakpoint-mobile)
       margin: 0px
-    .project-overview
-      color: $dark-green
-      text-align: center
-      position: absolute
-      height: 100%
-      width: 100%
-      opacity: 0
-      transition: all .7s ease
-      background-color: $accent-orange
-      .project-name
-        font-size: 25px
-        margin: 15% auto 5%
-      .project-links
-        padding: 10px 30px
-        text-decoration: none
-        transition: all .7s ease
-        &:link
-          color: $dark-green
-        &:visited
-          color: $dark-green
-        &:hover
-          color: $light-green
-      .languages
-        .lang
-          padding: 10px 0px
-      hr
-        border: 1px solid $accent-orange
-        height: 1px
-        background: linear-gradient(to right, $accent-orange, $light-green, $accent-orange)
+    img
+      box-sizing: content-box
+      position: relative
+      max-width: 100%
+      max-height: 500px
 .links-for-mobile
   padding: 20px 0px
   a
@@ -55,17 +33,34 @@
   position: relative
   display: inline-block
 
-  .code-snippet-wrapper
-    background-color: $accent-darker-blue
-    padding: 20px 0px
-    position: relative
-    .code-snippet
-      background:
-        repeat: no-repeat
-        position: left top
-        size: 100%
-      height: 200px
-      box-sizing: border-box
+  .overview-wrapper
+    .project-overview
+      padding: 20px 0px
+      color: $dark-green
+      text-align: center
+      max-width: 100%
+      max-height: 500px
+      transition: all .7s ease
+      background-color: $accent-orange
+      .project-name
+        font-size: 25px
+      .project-links
+        padding: 3px 30px
+        text-decoration: none
+        transition: all .7s ease
+        &:link
+          color: $dark-green
+        &:visited
+          color: $dark-green
+        &:hover
+          color: $light-green
+      .languages
+        .lang
+          padding: 5px 0px
+      hr
+        border: 1px solid $accent-orange
+        height: 1px
+        background: linear-gradient(to right, $accent-orange, $light-green, $accent-orange)
   .challenges-wrapper
     display: inline-block
     .challenges
@@ -76,15 +71,6 @@
 
 
 #project1
-  .preview
-    background:
-      image: url('../images/dc_roast_screenshot.png')
-      repeat: no-repeat
-      position: center top
-      size: auto 110%
-    &:hover
-      background:
-        size: auto 100%
   .details
     .code-snippet-wrapper
       .code-snippet
@@ -101,14 +87,8 @@
         display: inline-block
 #project2
   .preview
-    background:
-      image: url('../images/zombiez_screenshot.png')
-      repeat: no-repeat
-      position: center top
-      size: auto 110%
-    &:hover
-      background:
-        size: auto 100%
+    img
+      max-width: 100%
   .details
     .code-snippet-wrapper
       .code-snippet
@@ -126,14 +106,9 @@
 
 #project3
   .preview
-    background:
-      image: url('../images/political_screenshot.png')
-      repeat: no-repeat
-      position: center top
-      size: auto 110%
-    &:hover
-      background:
-        size: auto 100%
+    img
+      max-width: 100%
+      box-sizing: border-box
   .details
     .code-snippet-wrapper
       .code-snippet
@@ -152,14 +127,9 @@
           font-size: 14px
 #project4
   .preview
-    background:
-      image: url('../images/blackjack_screenshot.png')
-      repeat: no-repeat
-      position: center top
-      size: auto 110%
-    &:hover
-      background:
-        size: auto 100%
+    img
+      max-width: 100%
+      box-sizing: border-box
   .details
     .code-snippet-wrapper
       .code-snippet

@@ -12,9 +12,9 @@ $(document).ready(function(){
 		}
 	});
 	//project hover effect
-	$('.project-overview').hover(function(){
-		$(this).css({'opacity': .9});
-	}, function(){
-		$(this).css({'opacity': 0});
-	});
+	// $('.project-overview').hover(function(){
+	// 	$(this).css({'background-color': 'transparent'});
+	// }, function(){
+	// 	$(this).css({'background-color': 'F88909'});
+	// });
 });
