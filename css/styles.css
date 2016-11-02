@@ -241,7 +241,7 @@
       .details .overview-wrapper .project-overview .project-links:hover {
         color: #E0E0E0; }
     .details .overview-wrapper .project-overview .languages .lang {
-      padding: 5px 0px; }
+      padding: 5px 20px; }
     .details .overview-wrapper .project-overview hr {
       border: 1px solid #F88909;
       height: 1px;
