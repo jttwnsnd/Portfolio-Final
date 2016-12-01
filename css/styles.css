@@ -5,6 +5,7 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+
 @media screen and (min-width: 950px) {
   .arrow {
     background-color: transparent;
@@ -17,13 +18,14 @@
     border-bottom: 10px solid transparent;
     transform: translateY(-10px);
     opacity: 0;
-    transition: all 0.7s ease; } }
+    transition: all .7s ease; } }
+
 @media screen and (min-width: 768px) {
   .arrow {
     margin: 0; }
-
   .arrow_drop {
     margin: 0; } }
+
 .menu_option:hover .arrow {
   transform: translateY(0px);
   opacity: 1; }
@@ -43,7 +45,7 @@
 
 .navbar-toggle {
   background-color: #111111;
-  transition: all 0.7s ease; }
+  transition: all .7s ease; }
   .navbar-toggle:hover {
     background-color: #E0E0E0; }
     .navbar-toggle:hover .icon-bar {
@@ -51,7 +53,7 @@
 
 .icon-bar {
   background-color: #E0E0E0;
-  transition: all 0.7s ease; }
+  transition: all .7s ease; }
   .icon-bar .brand {
     position: absolute;
     top: 0;
@@ -75,7 +77,7 @@
       position: relative;
       top: -1em; }
     .icon-bar #ribbon-body:after {
-      content: " ";
+      content: ' ';
       position: absolute;
       width: 0;
       height: 0;
@@ -85,7 +87,7 @@
       border-style: solid;
       border-color: #6A6A6A transparent transparent #6A6A6A; }
     .icon-bar #ribbon-body:before {
-      content: " ";
+      content: ' ';
       z-index: -1;
       position: absolute;
       width: 0;
@@ -100,7 +102,7 @@
 
 .navbar-nav > li > a {
   color: #E0E0E0;
-  transition: all 0.7s ease; }
+  transition: all .7s ease; }
   .navbar-nav > li > a:active {
     color: #00A6C3;
     background-color: #111111; }
@@ -110,7 +112,7 @@
 
 .navbar-brand {
   color: #0086BC;
-  transition: all 0.7s ease; }
+  transition: all .7s ease; }
   .navbar-brand:hover {
     color: #00A6C3; }
 
@@ -124,6 +126,7 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+
 #greet {
   background-image: url("../images/greet_headshot.jpg");
   background-size: contain;
@@ -186,6 +189,7 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+
 #portfolio {
   height: auto;
   width: 100%;
@@ -198,7 +202,7 @@
     box-sizing: border-box;
     display: inline-block;
     max-height: 500px;
-    transition: all 0.7s ease-in-out; }
+    transition: all .7s ease-in-out; }
     @media screen and (min-width: 600px) {
       .project .preview {
         margin: 0px; } }
@@ -211,7 +215,7 @@
 .links-for-mobile {
   padding: 20px 0px; }
   .links-for-mobile a {
-    transition: all 0.7s ease;
+    transition: all .7s ease;
     color: #F88909; }
     .links-for-mobile a:hover {
       color: #E0E0E0;
@@ -226,14 +230,14 @@
     text-align: center;
     max-width: 100%;
     max-height: 500px;
-    transition: all 0.7s ease;
+    transition: all .7s ease;
     background-color: #F88909; }
     .details .overview-wrapper .project-overview .project-name {
       font-size: 25px; }
     .details .overview-wrapper .project-overview .project-links {
       padding: 3px 30px;
       text-decoration: none;
-      transition: all 0.7s ease; }
+      transition: all .7s ease; }
       .details .overview-wrapper .project-overview .project-links:link {
         color: #111111; }
       .details .overview-wrapper .project-overview .project-links:visited {
@@ -260,8 +264,10 @@
   transition: all 5s ease-in-out;
   background-image: url("../images/dc_roaster_snippet.png");
   background-size: auto 220%; }
+
 #project1 .details:hover .code-snippet {
   background-position: center bottom; }
+
 #project1 .details .challenges-wrapper {
   display: inline-block; }
   #project1 .details .challenges-wrapper .challenges {
@@ -269,12 +275,15 @@
 
 #project2 .preview img {
   max-width: 100%; }
+
 #project2 .details .code-snippet-wrapper .code-snippet {
   transition: all 5s ease-in-out;
   background-image: url("../images/zombiez_snippet.png");
   background-size: auto 220%; }
+
 #project2 .details:hover .code-snippet {
   background-position: center bottom; }
+
 #project2 .details .challenges-wrapper {
   display: inline-block; }
   #project2 .details .challenges-wrapper .challenges {
@@ -283,12 +292,15 @@
 #project3 .preview img {
   max-width: 100%;
   box-sizing: border-box; }
+
 #project3 .details .code-snippet-wrapper .code-snippet {
   transition: all 5s ease-in-out;
   background-image: url("../images/political_snippet.png");
   background-size: auto 220%; }
+
 #project3 .details:hover .code-snippet {
   background-position: center bottom; }
+
 #project3 .details .challenges-wrapper {
   display: inline-block; }
   #project3 .details .challenges-wrapper .challenges {
@@ -297,12 +309,15 @@
 #project4 .preview img {
   max-width: 100%;
   box-sizing: border-box; }
+
 #project4 .details .code-snippet-wrapper .code-snippet {
   transition: all 5s ease-in-out;
   background-image: url("../images/blackjack_snippet.png");
   background-size: auto 220%; }
+
 #project4 .details:hover .code-snippet {
   background-position: center bottom; }
+
 #project4 .details .challenges-wrapper {
   display: inline-block; }
   #project4 .details .challenges-wrapper .challenges {
@@ -329,6 +344,7 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+
 @keyframes moving_arrows {
   0% {
     transform: translateY(0px);
@@ -336,8 +352,10 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+
 #about .section-title {
   color: #0086BC; }
+
 #about .about_me {
   font-size: 20px;
   margin-top: 15px; }
@@ -349,6 +367,7 @@
     height: 150px; }
   #about .about_me .text {
     font-size: 14px; }
+
 #about .highlight_me {
   color: #EE242F;
   margin: 20px; }
@@ -381,6 +400,7 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+
 #contact {
   background-color: #424242; }
   #contact .section-title {
@@ -399,7 +419,7 @@
   #contact .fa-3 {
     font-size: 7em;
     color: #111111;
-    transition: all 0.7s ease; }
+    transition: all .7s ease; }
     #contact .fa-3:hover {
       color: #F88909; }
 
@@ -452,6 +472,7 @@
   100% {
     transform: translateY(15px);
     opacity: 0; } }
+
 .jt-footer {
   padding: 20px; }
 
